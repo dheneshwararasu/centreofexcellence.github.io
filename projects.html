@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Centre Of Excellence | STRATEQ Group.</title>
+    
+        <link rel="apple-touch-icon" sizes="56x56" href="/favicon/favicon-56.png">
+        <link rel="apple-touch-icon" sizes="112x112" href="/favicon/favicon-112.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/favicon/favicon-114.png">
+        <link rel="icon" type="image/png" sizes="128x128" href="/favicon/favicon-128.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="/favicon/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16.png">
+        <link rel="shortcut icon" href="/favicon/favicon-32.png">
+        <script async="" src="js/analytics.js"></script>
+        <script src="js/widget.js" async="true"></script>
+    
+    
+    
+    
+    
+        <link rel="preload" href="assets/css/app.css" as="style">
+        <link rel="preload" href="assets/js/script.js" as="script">
+        <link rel="prefetch" href="assets/js/fetchscript.js">
+        <link rel="stylesheet" href="assets/css/app.css">
+        <style type="text/css">
+            .medium-zoom-overlay {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                opacity: 0;
+                transition: opacity .3s;
+                will-change: opacity
+            }
+    
+            .medium-zoom--opened .medium-zoom-overlay {
+                cursor: pointer;
+                cursor: zoom-out;
+                opacity: 1
+            }
+    
+            .medium-zoom-image {
+                cursor: pointer;
+                cursor: zoom-in;
+                transition: transform .3s cubic-bezier(.2, 0, .2, 1) !important
+            }
+    
+            .medium-zoom-image--hidden {
+                visibility: hidden
+            }
+    
+            .medium-zoom-image--opened {
+                position: relative;
+                cursor: pointer;
+                cursor: zoom-out;
+                will-change: transform
+            }
+        </style>
+        <meta name="description" content="We design, develop and maintain web and mobile applications since 2007. 60+ team members, 2 offices and more than 300 projects completed.">
+        <meta name="keywords" content="development, developer, designer, software development, custom software development, design, product design, outsourcing, software outsourcing, web, mobile, web development, mobile development, desktop development, developer, developers, programming, programmers, DevOps, system administration, iOS, Android, iPad, Android app, iOS app, application, mobile app, mobile application, logo, landing page, UI, UX, PHP, HTML, CSS, Angular, JS, Javascript, Typescript, TS, Vue, Vue.js, Angular.js, Node.js, Express.js, React, React.js, Nest.js, Redux, AWS, GCP, Google Cloud, Firebase, MySQL, Mongo, MongoDB, PostgreSQL, Figma, Swift, Kotlin, C++, C, C#, brand materials design, mockups, web design, mobile design, prototype, MVP, project management, QA, maintenance, minimum viable product, project requirements, project management, SaaS, gitlab, healthcare, finance, HR, Human Relation">
+        <meta name="theme-color" content="#3eaf7c">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="og:type" content="website">
+        <meta name="og:url" content="https://www.ronasit.com/">
+        <meta name="og:image" content="https://ronasit-website.web.app/favicon/preview.png">
+        <meta name="og:title" content="Ronas IT. Web and mobile applications for startups and businesses.">
+    </head>
+    
+    <body>
+        <div id="app">
+            <div>
+                <div>
+                    <input type="checkbox" id="menu-checkbox" class="header-menu-checkbox">
+                        <input type="checkbox" id="theme-checkbox" class="theme-checkbox">
+                            <div class="content__hero"></div>
+                            <div class="layout">
+                                <div class="cursor" style="top: 977.999px; left: 208.006px; width: 10px; height: 10px; border-radius: 30px; opacity: 0;"></div>
+                                <div>
+                                    <header class="header">
+                                        <a href="/" class="header-logo">
+                                            <span class="header-logo-img"></span>
+                                            <span class="header-logo-text"></span>
+                                        </a>
+                                        <div class="container container-large">
+                                            <ul class="header-menu">
+                                                <li class="header-item">
+                                                    <a href="/services" class="header-link">Services</a>
+                                                </li>
+                                                <li class="header-item">
+                                                    <a href="/projects" aria-current="page" class="header-link router-link-exact-active header-link-active">Projects</a>
+                                                </li>
+                                                <li class="header-item">
+                                                    <a href="/about" class="header-link">About</a>
+                                                </li>
+                                                <li class="header-item">
+                                                    <a href="/blog" class="header-link">Blog</a>
+                                                </li>
+                                                <li class="header-item header-theme">
+                                                    <label for="theme-checkbox">
+                                                        <span class="header-theme-icon header-theme-icon-light"></span>
+                                                        <span class="header-theme-icon header-theme-icon-dark"></span>
+                                                    </label>
+                                                </li>
+                                                <li class="header-item header-lang">
+                                                    <div class="header-lang-dropdown">
+                                                        <button class="header-lang-trigger">En 
+                                                            <span class="icon icon-mask icon-dropdown"></span>
+                                                        </button>
+                                                        <div class="header-lang-content">
+                                                            <span class="header-lang-item">En</span>
+                                                            <a class="header-lang-item">Ru</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <label for="menu-checkbox" class="header-menu-toggle">
+                                            <span class="header-menu-bars"></span>
+                                            <span class="header-menu-close"></span>
+                                        </label>
+                                        <div class="menu">
+                                            <div class="container">
+                                                <div class="menu-main">
+                                                    <div class="row">
+                                                        <div class="col col-33 menu-menu">
+                                                            <h3 class="headline">Menu</h3>
+                                                            <ul>
+                                                                <img data-src="/img/menu.jpg" loading="lazy" srcset="/img/menu.jpg 1000w, /img/blank.png 10w" sizes="(max-width: 767px) 5px, 30vw" class="menu-img lazy" src="/img/menu.jpg">
+                                                                    <li>
+                                                                        <a href="/services" class="menu-item">
+                                                                            <img data-src="/img/menu-services.jpg" loading="lazy" srcset="/img/menu-services.jpg 1000w, /img/blank.png 10w" sizes="(max-width: 767px) 5px, 30vw" class="menu-img lazy" src="/img/menu-services.jpg">
+                                Services
+                            
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="/projects" aria-current="page" class="menu-item router-link-exact-active menu-item-active">
+                                                                                <img data-src="/img/menu-projects.jpg" loading="lazy" srcset="/img/menu-projects.jpg 1000w, /img/blank.png 10w" sizes="(max-width: 767px) 5px, 30vw" class="menu-img dark-only lazy" src="/img/menu-projects.jpg">
+                                                                                    <img data-src="/img/menu-projects-light.jpg" loading="lazy" srcset="/img/menu-projects-light.jpg 1000w, /img/blank.png 10w" sizes="(max-width: 767px) 5px, 30vw" class="menu-img light-only lazy" src="/img/menu-projects-light.jpg">
+                              Projects
+                            
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="/about" class="menu-item">
+                                                                                        <img data-src="/img/menu.jpg" loading="lazy" srcset="/img/menu.jpg 1000w, /img/blank.png 100w" sizes="(max-width: 767px) 5px, 30vw" class="menu-img lazy" src="/img/menu.jpg">
+                                About
+                            
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="/blog" class="menu-item">
+                                                                                            <img data-src="/img/menu-blog.jpg" loading="lazy" srcset="/img/menu-blog.jpg 1000w, /img/blank.png 10w" sizes="(max-width: 767px) 5px, 30vw" class="menu-img lazy" src="/img/menu-blog.jpg">
+                                Blog
+                            
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="/contact" class="menu-item">
+                                                                                                <img data-src="/img/menu-contacts.jpg" loading="lazy" srcset="/img/menu-contacts.jpg 1000w, /img/blank.png 10w" sizes="(max-width: 767px) 5px, 30vw" class="menu-img lazy" src="/img/menu-contacts.jpg">
+                                Contacts
+                            
+                                                                                                </a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                    <div class="col col-33 menu-supplements">
+                                                                                        <div class="menu-getintouch">
+                                                                                            <h3 class="headline">Get in touch</h3>
+                                                                                            <a href="mailto:info@ronasit.com" class="underlined underlined-waved">info@ronasit.com</a>
+                                                                                        </div>
+                                                                                        <div class="menu-theme">
+                                                                                            <h3 class="headline">UI Theme</h3>
+                                                                                            <label for="theme-checkbox" class="menu-theme-switch">
+                                                                                                <span class="menu-theme-label">Dark</span>
+                                                                                                <span class="menu-theme-label">Light</span>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="menu-footer">
+                                                                                <span>English</span> / 
+                                                                                <a href="/ru">Russian</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </header>
+                                                                <a href="/contact" data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-filled header-estimate">
+                                                                    <span class="button-inner mouse-target">
+                                                                        <span class="button-fill" style="left: 37.5156px; top: 27px;"></span>
+                                                                        <span class="button-caption">Estimate Project</span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="page">
+                                                                <main>
+                                                                    <div class="content__default">
+                                                                        <div>
+                                                                            <div class="page-title projects-title">
+                                                                                <div class="container">
+                                                                                    <h4 class="headline">Projects</h4>
+                                                                                    <div class="content__title">
+                                                                                        <h1 id="take-a-look-at-some-of-the-ideas-we-ve-helped-to-implement-will-yours-be-next">
+                                                                                            <a href="#take-a-look-at-some-of-the-ideas-we-ve-helped-to-implement-will-yours-be-next" class="header-anchor">#</a> Take a look at some of the ideas we’ve helped to implement. Will yours be next?
+                                                                                        </h1>
+                                                                                    </div>
+                                                                                    <div class="projects-tags">
+                                                                                        <a data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-undefined selected">
+                                                                                            <span class="button-inner mouse-target">
+                                                                                                <span class="button-fill" style="left:0px;top:0px;"></span>
+                                                                                                <span class="button-caption">All projects</span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                        <!---->
+                                                                                        <a data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-undefined">
+                                                                                            <span class="button-inner mouse-target">
+                                                                                                <span class="button-fill" style="left:0px;top:0px;"></span>
+                                                                                                <span class="button-caption">Health</span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                        <!---->
+                                                                                        <a data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-undefined">
+                                                                                            <span class="button-inner mouse-target">
+                                                                                                <span class="button-fill" style="left: -7.89062px; top: 47.25px;"></span>
+                                                                                                <span class="button-caption">Fintech</span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                        <!---->
+                                                                                        <a data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-undefined">
+                                                                                            <span class="button-inner mouse-target">
+                                                                                                <span class="button-fill" style="left: 49.875px; top: 58.25px;"></span>
+                                                                                                <span class="button-caption">Productivity</span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                        <!---->
+                                                                                        <a data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-undefined">
+                                                                                            <span class="button-inner mouse-target">
+                                                                                                <span class="button-fill" style="left: -9.75px; top: -7.75px;"></span>
+                                                                                                <span class="button-caption">Fitness</span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                        <!---->
+                                                                                        <a data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-undefined">
+                                                                                            <span class="button-inner mouse-target">
+                                                                                                <span class="button-fill" style="left:0px;top:0px;"></span>
+                                                                                                <span class="button-caption">Rental/Booking</span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                        <!---->
+                                                                                        <a data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-undefined">
+                                                                                            <span class="button-inner mouse-target">
+                                                                                                <span class="button-fill" style="left: 30.4531px; top: 66.25px;"></span>
+                                                                                                <span class="button-caption">E-Commerce</span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                        <br class="mobile-only">
+                                                                                            <a data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-undefined">
+                                                                                                <span class="button-inner mouse-target">
+                                                                                                    <span class="button-fill" style="left: 34.2969px; top: 15.25px;"></span>
+                                                                                                    <span class="button-caption">Delivery</span>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                            <!---->
+                                                                                            <a data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-undefined">
+                                                                                                <span class="button-inner mouse-target">
+                                                                                                    <span class="button-fill" style="left:0px;top:0px;"></span>
+                                                                                                    <span class="button-caption">Illustrations</span>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                            <!---->
+                                                                                            <a data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-undefined">
+                                                                                                <span class="button-inner mouse-target">
+                                                                                                    <span class="button-fill" style="left:0px;top:0px;"></span>
+                                                                                                    <span class="button-caption">Logos</span>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                            <!---->
+                                                                                            <a data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-undefined">
+                                                                                                <span class="button-inner mouse-target">
+                                                                                                    <span class="button-fill" style="left: 52.5px; top: 64.25px;"></span>
+                                                                                                    <span class="button-caption">Stickers</span>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                            <!---->
+                                                                                            <a data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-undefined">
+                                                                                                <span class="button-inner mouse-target">
+                                                                                                    <span class="button-fill" style="left: 20.5938px; top: 55.25px;"></span>
+                                                                                                    <span class="button-caption">Dashboard</span>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                            <!---->
+                                                                                            <a data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-undefined">
+                                                                                                <span class="button-inner mouse-target">
+                                                                                                    <span class="button-fill" style="left:0px;top:0px;"></span>
+                                                                                                    <span class="button-caption">Training</span>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                            <!---->
+                                                                                            <a data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-undefined">
+                                                                                                <span class="button-inner mouse-target">
+                                                                                                    <span class="button-fill" style="left:0px;top:0px;"></span>
+                                                                                                    <span class="button-caption">Chat</span>
+                                                                                                </span>
+                                                                                            </a>
+                                                                                            <!---->
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="projects-list">
+                                                                                    <div class="container">
+                                                                                        <div class="projects-list-grid">
+                                                                                            <div class="projects-project" data-v-0e4362d4="">
+                                                                                                <span class="projects-project-background light-only" style="background:#2B4E47;" data-v-0e4362d4=""></span>
+                                                                                                <span class="projects-project-background dark-only" style="background:#2B4E47;" data-v-0e4362d4=""></span>
+                                                                                                <a href="https://www.behance.net/gallery/102596433/Self-care-Mobile-App-Design-Concept-UI-UX" target="_blank" class="projects-project-link" data-v-0e4362d4=""></a>
+                                                                                                <div class="projects-project-image" data-v-0e4362d4="">
+                                                                                                    <div class="projects-project-wrap" data-v-0e4362d4="">
+                                                                                                        <img data-src="/projects/selfcare-light.jpg" loading="lazy" class="lazy" src="/projects/selfcare-light.jpg" data-v-0e4362d4="">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="projects-project-details" data-v-0e4362d4="">
+                                                                                                        <div class="projects-project-title" data-v-0e4362d4="">
+                  Self-care App
+                </div>
+                                                                                                        <div class="projects-project-description" data-v-0e4362d4="">
+                  A self-care app that offers a personalized selection of guides and mentors
+                </div>
+                                                                                                        <div class="projects-project-tags" data-v-0e4362d4="">
+                                                                                                            <span class="project-tag" data-v-0e4362d4="">health</span>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="projects-project" data-v-0e4362d4="">
+                                                                                                    <span class="projects-project-background light-only" style="background:#FB6E3B;" data-v-0e4362d4=""></span>
+                                                                                                    <span class="projects-project-background dark-only" style="background:#635F5C;" data-v-0e4362d4=""></span>
+                                                                                                    <a href="https://www.behance.net/gallery/104723621/Food-Delivery-Mobile-App-UIUX-Design" target="_blank" class="projects-project-link" data-v-0e4362d4=""></a>
+                                                                                                    <div class="projects-project-image" data-v-0e4362d4="">
+                                                                                                        <div class="projects-project-wrap" data-v-0e4362d4="">
+                                                                                                            <img data-src="/projects/fooddelivery-light.jpg" loading="lazy" class="light-only lazy" src="/projects/fooddelivery-light.jpg" data-v-0e4362d4="">
+                                                                                                                <img data-src="/projects/fooddelivery-dark.jpg" loading="lazy" class="dark-only lazy" src="/projects/fooddelivery-dark.jpg" data-v-0e4362d4="">
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="projects-project-details" data-v-0e4362d4="">
+                                                                                                                <div class="projects-project-title" data-v-0e4362d4="">
+                  Food Delivery App
+                </div>
+                                                                                                                <div class="projects-project-description" data-v-0e4362d4="">
+                  An on-demand food delivery app
+                </div>
+                                                                                                                <div class="projects-project-tags" data-v-0e4362d4="">
+                                                                                                                    <span class="project-tag" data-v-0e4362d4="">delivery</span>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="projects-project projects-project-large" data-v-0e4362d4="">
+                                                                                                            <span class="projects-project-background light-only" style="background:#FFD700;" data-v-0e4362d4=""></span>
+                                                                                                            <span class="projects-project-background dark-only" style="background:#082B35;" data-v-0e4362d4=""></span>
+                                                                                                            <a href="https://www.behance.net/gallery/92092523/Ronas-IT-Stickerpack" target="_blank" class="projects-project-link" data-v-0e4362d4=""></a>
+                                                                                                            <div class="projects-project-image" data-v-0e4362d4="">
+                                                                                                                <div class="projects-project-wrap" data-v-0e4362d4="">
+                                                                                                                    <img data-src="/projects/stickerpack-light.jpg" loading="lazy" class="light-only desktop-only lazy" src="/projects/stickerpack-light.jpg" data-v-0e4362d4="">
+                                                                                                                        <img data-src="/projects/stickerpack-dark.jpg" loading="lazy" class="dark-only desktop-only lazy" src="/projects/stickerpack-dark.jpg" data-v-0e4362d4="">
+                                                                                                                            <img data-src="/projects/card-stickers-mobile-light.jpg" loading="lazy" class="light-only mobile-only lazy" src="/projects/card-stickers-mobile-light.jpg" data-v-0e4362d4="">
+                                                                                                                                <img data-src="/projects/card-stickers-mobile.jpg" loading="lazy" class="dark-only mobile-only lazy" src="/projects/card-stickers-mobile.jpg" data-v-0e4362d4="">
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                            <div class="projects-project-details" data-v-0e4362d4="">
+                                                                                                                                <div class="projects-project-title" data-v-0e4362d4="">
+                  Stickers
+                </div>
+                                                                                                                                <div class="projects-project-description" data-v-0e4362d4="">
+                  Telegram Sticker Pack
+                                                                                                                                    <br data-v-0e4362d4="">for Ronas.IT
+                
+                                                                                                                                    </div>
+                                                                                                                                    <div class="projects-project-tags" data-v-0e4362d4="">
+                                                                                                                                        <span class="project-tag" data-v-0e4362d4="">illustrations</span>
+                                                                                                                                        <span class="project-tag" data-v-0e4362d4="">stickers</span>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                            <div class="projects-project" data-v-0e4362d4="">
+                                                                                                                                <span class="projects-project-background light-only" style="background:#373D43;" data-v-0e4362d4=""></span>
+                                                                                                                                <span class="projects-project-background dark-only" style="background:#30353B;" data-v-0e4362d4=""></span>
+                                                                                                                                <a href="https://www.behance.net/gallery/97844297/Live-Workouts-UIUX-Design" target="_blank" class="projects-project-link" data-v-0e4362d4=""></a>
+                                                                                                                                <div class="projects-project-image" data-v-0e4362d4="">
+                                                                                                                                    <div class="projects-project-wrap" data-v-0e4362d4="">
+                                                                                                                                        <img data-src="/projects/workouts-light.jpg" loading="lazy" class="light-only lazy" src="/projects/workouts-light.jpg" data-v-0e4362d4="">
+                                                                                                                                            <img data-src="/projects/workouts-dark.jpg" loading="lazy" class="dark-only lazy" src="/projects/workouts-dark.jpg" data-v-0e4362d4="">
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="projects-project-details" data-v-0e4362d4="">
+                                                                                                                                            <div class="projects-project-title" data-v-0e4362d4="">
+                  Remote Workouts
+                </div>
+                                                                                                                                            <div class="projects-project-description" data-v-0e4362d4="">
+                  A fitness app for remote group workouts and classes
+                </div>
+                                                                                                                                            <div class="projects-project-tags" data-v-0e4362d4="">
+                                                                                                                                                <span class="project-tag" data-v-0e4362d4="">fitness</span>
+                                                                                                                                                <span class="project-tag" data-v-0e4362d4="">productivity</span>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                    <div class="projects-project" data-v-0e4362d4="">
+                                                                                                                                        <span class="projects-project-background light-only" style="background:#BBC8C8;" data-v-0e4362d4=""></span>
+                                                                                                                                        <span class="projects-project-background dark-only" style="background:#374444;" data-v-0e4362d4=""></span>
+                                                                                                                                        <a href="https://www.behance.net/gallery/96050091/UIUX-for-Remote-Health-App" target="_blank" class="projects-project-link" data-v-0e4362d4=""></a>
+                                                                                                                                        <div class="projects-project-image" data-v-0e4362d4="">
+                                                                                                                                            <div class="projects-project-wrap" data-v-0e4362d4="">
+                                                                                                                                                <img data-src="/projects/healthcare-light.jpg" loading="lazy" class="light-only lazy" src="/projects/healthcare-light.jpg" data-v-0e4362d4="">
+                                                                                                                                                    <img data-src="/projects/healthcare-dark.jpg" loading="lazy" class="dark-only lazy" src="/projects/healthcare-dark.jpg" data-v-0e4362d4="">
+                                                                                                                                                    </div>
+                                                                                                                                                </div>
+                                                                                                                                                <div class="projects-project-details" data-v-0e4362d4="">
+                                                                                                                                                    <div class="projects-project-title" data-v-0e4362d4="">
+                  Remote Healthcare
+                </div>
+                                                                                                                                                    <div class="projects-project-description" data-v-0e4362d4="">
+                  A telemedicine app that offers remote healthcare services
+                </div>
+                                                                                                                                                    <div class="projects-project-tags" data-v-0e4362d4="">
+                                                                                                                                                        <span class="project-tag" data-v-0e4362d4="">health</span>
+                                                                                                                                                        <span class="project-tag" data-v-0e4362d4="">booking</span>
+                                                                                                                                                    </div>
+                                                                                                                                                </div>
+                                                                                                                                            </div>
+                                                                                                                                            <div class="projects-project" data-v-0e4362d4="">
+                                                                                                                                                <span class="projects-project-background light-only" style="background:#8FABBE;" data-v-0e4362d4=""></span>
+                                                                                                                                                <span class="projects-project-background dark-only" style="background:#224259;" data-v-0e4362d4=""></span>
+                                                                                                                                                <a href="https://www.behance.net/gallery/104308325/Openi-Fintech-Website-UIUX-Design" target="_blank" class="projects-project-link" data-v-0e4362d4=""></a>
+                                                                                                                                                <div class="projects-project-image" data-v-0e4362d4="">
+                                                                                                                                                    <div class="projects-project-wrap" data-v-0e4362d4="">
+                                                                                                                                                        <img data-src="/projects/openi-light.jpg" loading="lazy" class="light-only lazy" src="/projects/openi-light.jpg" data-v-0e4362d4="">
+                                                                                                                                                            <img data-src="/projects/openi-dark.jpg" loading="lazy" class="dark-only lazy" src="/projects/openi-dark.jpg" data-v-0e4362d4="">
+                                                                                                                                                            </div>
+                                                                                                                                                        </div>
+                                                                                                                                                        <div class="projects-project-details" data-v-0e4362d4="">
+                                                                                                                                                            <div class="projects-project-title" data-v-0e4362d4="">
+                  Openi
+                </div>
+                                                                                                                                                            <div class="projects-project-description" data-v-0e4362d4="">
+                  A matchmaking fintech website for entrepreneurs and investors
+                </div>
+                                                                                                                                                            <div class="projects-project-tags" data-v-0e4362d4="">
+                                                                                                                                                                <span class="project-tag" data-v-0e4362d4="">fintech</span>
+                                                                                                                                                            </div>
+                                                                                                                                                        </div>
+                                                                                                                                                    </div>
+                                                                                                                                                    <div class="projects-project" data-v-0e4362d4="">
+                                                                                                                                                        <span class="projects-project-background light-only" style="background:#373E45;" data-v-0e4362d4=""></span>
+                                                                                                                                                        <span class="projects-project-background dark-only" style="background:#373E45;" data-v-0e4362d4=""></span>
+                                                                                                                                                        <a href="https://www.behance.net/gallery/103472575/HR-Management-Software-UIUX-Website-for-Facta" target="_blank" class="projects-project-link" data-v-0e4362d4=""></a>
+                                                                                                                                                        <div class="projects-project-image" data-v-0e4362d4="">
+                                                                                                                                                            <div class="projects-project-wrap" data-v-0e4362d4="">
+                                                                                                                                                                <img data-src="/projects/card-facta.jpg" loading="lazy" class="lazy" src="/projects/card-facta.jpg" data-v-0e4362d4="">
+                                                                                                                                                                </div>
+                                                                                                                                                            </div>
+                                                                                                                                                            <div class="projects-project-details" data-v-0e4362d4="">
+                                                                                                                                                                <div class="projects-project-title" data-v-0e4362d4="">
+                  Facta
+                </div>
+                                                                                                                                                                <div class="projects-project-description" data-v-0e4362d4="">
+                  An employee engagement and training web app
+                </div>
+                                                                                                                                                                <div class="projects-project-tags" data-v-0e4362d4="">
+                                                                                                                                                                    <span class="project-tag" data-v-0e4362d4="">training</span>
+                                                                                                                                                                    <span class="project-tag" data-v-0e4362d4="">dashboard</span>
+                                                                                                                                                                </div>
+                                                                                                                                                            </div>
+                                                                                                                                                        </div>
+                                                                                                                                                        <div class="projects-project" data-v-0e4362d4="">
+                                                                                                                                                            <span class="projects-project-background light-only" style="background:#94BB7C;" data-v-0e4362d4=""></span>
+                                                                                                                                                            <span class="projects-project-background dark-only" style="background:#2F4323;" data-v-0e4362d4=""></span>
+                                                                                                                                                            <a href="https://www.behance.net/gallery/92161091/365-days-booking-web-based-hotel-management-software" target="_blank" class="projects-project-link" data-v-0e4362d4=""></a>
+                                                                                                                                                            <div class="projects-project-image" data-v-0e4362d4="">
+                                                                                                                                                                <div class="projects-project-wrap" data-v-0e4362d4="">
+                                                                                                                                                                    <img data-src="/projects/365days-light.jpg" loading="lazy" class="light-only lazy" src="/projects/365days-light.jpg" data-v-0e4362d4="">
+                                                                                                                                                                        <img data-src="/projects/365days-dark.jpg" loading="lazy" class="dark-only lazy" src="/projects/365days-dark.jpg" data-v-0e4362d4="">
+                                                                                                                                                                        </div>
+                                                                                                                                                                    </div>
+                                                                                                                                                                    <div class="projects-project-details" data-v-0e4362d4="">
+                                                                                                                                                                        <div class="projects-project-title" data-v-0e4362d4="">
+                  365daybookings
+                </div>
+                                                                                                                                                                        <div class="projects-project-description" data-v-0e4362d4="">
+                  A complex platform for&nbsp;hotel management
+                </div>
+                                                                                                                                                                        <div class="projects-project-tags" data-v-0e4362d4="">
+                                                                                                                                                                            <span class="project-tag" data-v-0e4362d4="">rental/booking</span>
+                                                                                                                                                                        </div>
+                                                                                                                                                                    </div>
+                                                                                                                                                                </div>
+                                                                                                                                                                <div class="projects-project" data-v-0e4362d4="">
+                                                                                                                                                                    <span class="projects-project-background light-only" style="background:#B8884B;" data-v-0e4362d4=""></span>
+                                                                                                                                                                    <span class="projects-project-background dark-only" style="background:#4F412E;" data-v-0e4362d4=""></span>
+                                                                                                                                                                    <a href="https://www.behance.net/gallery/92100319/SmashMoji-Music-Messenger-App-Concept-UIUX" target="_blank" class="projects-project-link" data-v-0e4362d4=""></a>
+                                                                                                                                                                    <div class="projects-project-image" data-v-0e4362d4="">
+                                                                                                                                                                        <div class="projects-project-wrap" data-v-0e4362d4="">
+                                                                                                                                                                            <img data-src="/projects/smashmoji-light.jpg" loading="lazy" class="light-only lazy" src="/projects/smashmoji-light.jpg" data-v-0e4362d4="">
+                                                                                                                                                                                <img data-src="/projects/smashmoji-dark.jpg" loading="lazy" class="dark-only lazy" src="/projects/smashmoji-dark.jpg" data-v-0e4362d4="">
+                                                                                                                                                                                </div>
+                                                                                                                                                                            </div>
+                                                                                                                                                                            <div class="projects-project-details" data-v-0e4362d4="">
+                                                                                                                                                                                <div class="projects-project-title" data-v-0e4362d4="">
+                  SmashMoji
+                </div>
+                                                                                                                                                                                <div class="projects-project-description" data-v-0e4362d4="">
+                  A messenger app built around music and emojis
+                </div>
+                                                                                                                                                                                <div class="projects-project-tags" data-v-0e4362d4="">
+                                                                                                                                                                                    <span class="project-tag" data-v-0e4362d4="">chat</span>
+                                                                                                                                                                                </div>
+                                                                                                                                                                            </div>
+                                                                                                                                                                        </div>
+                                                                                                                                                                        <div class="projects-project" data-v-0e4362d4="">
+                                                                                                                                                                            <span class="projects-project-background light-only" style="background:#5B4452;" data-v-0e4362d4=""></span>
+                                                                                                                                                                            <span class="projects-project-background dark-only" style="background:#5B4452;" data-v-0e4362d4=""></span>
+                                                                                                                                                                            <a href="https://www.behance.net/gallery/95144445/ShopChat-UIUX-for-Social-Shopping-App" target="_blank" class="projects-project-link" data-v-0e4362d4=""></a>
+                                                                                                                                                                            <div class="projects-project-image" data-v-0e4362d4="">
+                                                                                                                                                                                <div class="projects-project-wrap" data-v-0e4362d4="">
+                                                                                                                                                                                    <img data-src="/projects/shopchat-light.jpg" loading="lazy" class="lazy" src="/projects/shopchat-light.jpg" data-v-0e4362d4="">
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                </div>
+                                                                                                                                                                                <div class="projects-project-details" data-v-0e4362d4="">
+                                                                                                                                                                                    <div class="projects-project-title" data-v-0e4362d4="">
+                  Shopchat
+                </div>
+                                                                                                                                                                                    <div class="projects-project-description" data-v-0e4362d4="">
+                  A marketplace app with a&nbsp;built-in a messenger
+                </div>
+                                                                                                                                                                                    <div class="projects-project-tags" data-v-0e4362d4="">
+                                                                                                                                                                                        <span class="project-tag" data-v-0e4362d4="">e-commerce</span>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                </div>
+                                                                                                                                                                            </div>
+                                                                                                                                                                            <div class="projects-project" data-v-0e4362d4="">
+                                                                                                                                                                                <span class="projects-project-background light-only" style="background:#4C4D61;" data-v-0e4362d4=""></span>
+                                                                                                                                                                                <span class="projects-project-background dark-only" style="background:#4C4D61;" data-v-0e4362d4=""></span>
+                                                                                                                                                                                <a href="https://dribbble.com/shots/13925844-Finance-Dashboard-Concept" target="_blank" class="projects-project-link" data-v-0e4362d4=""></a>
+                                                                                                                                                                                <div class="projects-project-image" data-v-0e4362d4="">
+                                                                                                                                                                                    <div class="projects-project-wrap" data-v-0e4362d4="">
+                                                                                                                                                                                        <img data-src="/projects/dashboard-light.jpg" loading="lazy" class="lazy" src="/projects/dashboard-light.jpg" data-v-0e4362d4="">
+                                                                                                                                                                                        </div>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <div class="projects-project-details" data-v-0e4362d4="">
+                                                                                                                                                                                        <div class="projects-project-title" data-v-0e4362d4="">
+                  Finance Dashboard
+                </div>
+                                                                                                                                                                                        <div class="projects-project-description" data-v-0e4362d4="">
+                  A dashboard of&nbsp;a&nbsp;financial service
+                </div>
+                                                                                                                                                                                        <div class="projects-project-tags" data-v-0e4362d4="">
+                                                                                                                                                                                            <span class="project-tag" data-v-0e4362d4="">fintech</span>
+                                                                                                                                                                                        </div>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                </div>
+                                                                                                                                                                                <div class="projects-project" data-v-0e4362d4="">
+                                                                                                                                                                                    <span class="projects-project-background light-only" style="background:#878D9F;" data-v-0e4362d4=""></span>
+                                                                                                                                                                                    <span class="projects-project-background dark-only" style="background:#878D9F;" data-v-0e4362d4=""></span>
+                                                                                                                                                                                    <a href="https://dribbble.com/shots/13819519-Banking-App-Design-Concept" target="_blank" class="projects-project-link" data-v-0e4362d4=""></a>
+                                                                                                                                                                                    <div class="projects-project-image" data-v-0e4362d4="">
+                                                                                                                                                                                        <div class="projects-project-wrap" data-v-0e4362d4="">
+                                                                                                                                                                                            <img data-src="/projects/wallet-light.jpg" loading="lazy" class="lazy" src="/projects/wallet-light.jpg" data-v-0e4362d4="">
+                                                                                                                                                                                            </div>
+                                                                                                                                                                                        </div>
+                                                                                                                                                                                        <div class="projects-project-details" data-v-0e4362d4="">
+                                                                                                                                                                                            <div class="projects-project-title" data-v-0e4362d4="">
+                  Wallet
+                </div>
+                                                                                                                                                                                            <div class="projects-project-description" data-v-0e4362d4="">
+                  A wallet-type app to track financial operations
+                </div>
+                                                                                                                                                                                            <div class="projects-project-tags" data-v-0e4362d4="">
+                                                                                                                                                                                                <span class="project-tag" data-v-0e4362d4="">fintech</span>
+                                                                                                                                                                                            </div>
+                                                                                                                                                                                        </div>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <div class="projects-project" data-v-0e4362d4="">
+                                                                                                                                                                                        <span class="projects-project-background light-only" style="background:#21202E;" data-v-0e4362d4=""></span>
+                                                                                                                                                                                        <span class="projects-project-background dark-only" style="background:#282733;" data-v-0e4362d4=""></span>
+                                                                                                                                                                                        <a href="https://www.behance.net/gallery/102597423/Logofolio-2019-2020" target="_blank" class="projects-project-link" data-v-0e4362d4=""></a>
+                                                                                                                                                                                        <div class="projects-project-image" data-v-0e4362d4="">
+                                                                                                                                                                                            <div class="projects-project-wrap" data-v-0e4362d4="">
+                                                                                                                                                                                                <img data-src="/projects/logofolio-light.jpg" loading="lazy" class="light-only lazy" src="/projects/logofolio-light.jpg" data-v-0e4362d4="">
+                                                                                                                                                                                                    <img data-src="/projects/logofolio-dark.jpg" loading="lazy" class="dark-only lazy" src="/projects/logofolio-dark.jpg" data-v-0e4362d4="">
+                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                </div>
+                                                                                                                                                                                                <div class="projects-project-details" data-v-0e4362d4="">
+                                                                                                                                                                                                    <div class="projects-project-title" data-v-0e4362d4="">
+                  Logofolio
+                </div>
+                                                                                                                                                                                                    <div class="projects-project-description" data-v-0e4362d4="">
+                  Logofolio 2019–2020
+                </div>
+                                                                                                                                                                                                    <div class="projects-project-tags" data-v-0e4362d4="">
+                                                                                                                                                                                                        <span class="project-tag" data-v-0e4362d4="">logos</span>
+                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                </div>
+                                                                                                                                                                                            </div>
+                                                                                                                                                                                        </div>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                </div>
+                                                                                                                                                                            </div>
+                                                                                                                                                                        </div>
+                                                                                                                                                                    </main>
+                                                                                                                                                                    <section class="section footer" data-v-836cd5f2="">
+                                                                                                                                                                        <div class="container" data-v-836cd5f2="">
+                                                                                                                                                                            <div class="footer-getintouch" data-v-836cd5f2="">
+                                                                                                                                                                                <h2 class="headline" data-v-836cd5f2="">Contacts</h2>
+                                                                                                                                                                                <a href="/contact" class="underlined underlined-waved" data-v-836cd5f2="">Get In Touch</a>
+                                                                                                                                                                            </div>
+                                                                                                                                                                            <div class="footer-contacts" data-v-836cd5f2="">
+                                                                                                                                                                                <div class="row row-smallpadding" data-v-836cd5f2="">
+                                                                                                                                                                                    <div class="col col-25 col-mobile-50" data-v-836cd5f2="">
+                                                                                                                                                                                        <strong data-v-836cd5f2="">Call</strong>
+                                                                                                                                                                                        <a href="tel:+79953940476" data-v-836cd5f2="">+7 995 394-04-76</a>
+                                                                                                                                                                                        <br data-v-836cd5f2="">
+                                                                                                                                                                                        </div>
+                                                                                                                                                                                        <div class="col col-25 col-mobile-50" data-v-836cd5f2="">
+                                                                                                                                                                                            <strong data-v-836cd5f2="">Write</strong>
+                                                                                                                                                                                            <div data-v-836cd5f2="">
+                                                                                                                                                                                                <a href="mailto:info@ronasit.com" class="lined" data-v-836cd5f2="">info@ronasit.com</a>
+                                                                                                                                                                                            </div>
+                                                                                                                                                                                            <div data-v-836cd5f2="">
+                                                                                                                                                                                                <a href="https://t.me/ronas_it" target="_blank" class="lined" data-v-836cd5f2="">Telegram</a>
+                                                                                                                                                                                            </div>
+                                                                                                                                                                                            <div data-v-836cd5f2="">
+                                                                                                                                                                                                <a href="https://wa.me/79953940476?text=Hi%20Ronas,%20I%20want%20you%20to%20help%20me%20with" target="_blank" class="lined" data-v-836cd5f2="">Whatsapp</a>
+                                                                                                                                                                                            </div>
+                                                                                                                                                                                        </div>
+                                                                                                                                                                                        <div class="col col-25 col-mobile-50" data-v-836cd5f2="">
+                                                                                                                                                                                            <strong data-v-836cd5f2="">Omsk office</strong>
+                                                                                                                                                                                            <span data-v-836cd5f2="">
+                    644099
+                                                                                                                                                                                                <br data-v-836cd5f2="">
+                    Gagarina st. 14, office 405
+                                                                                                                                                                                                    <br data-v-836cd5f2="">
+                    Omsk, Russia
+                                                                                                                                                                                                        <br data-v-836cd5f2="">
+                                                                                                                                                                                                        </span>
+                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                    <div class="col col-25 col-mobile-50" data-v-836cd5f2="">
+                                                                                                                                                                                                        <strong data-v-836cd5f2="">Krasnodar office</strong>
+                                                                                                                                                                                                        <span data-v-836cd5f2="">
+                    350000
+                                                                                                                                                                                                            <br data-v-836cd5f2="">
+                    Budennogo st. 129, block A, office A3.3
+                                                                                                                                                                                                                <br data-v-836cd5f2="">
+                    Krasnodar, Russia
+                                                                                                                                                                                                                    <br data-v-836cd5f2="">
+                                                                                                                                                                                                                    </span>
+                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div class="footer-socials" data-v-836cd5f2="">
+                                                                                                                                                                                                            <div class="socials" data-v-2cf38ec3="" data-v-836cd5f2="">
+                                                                                                                                                                                                                <span class="social social-instagram" data-v-2f7b29d6="" data-v-2cf38ec3="">
+                                                                                                                                                                                                                    <a href="https://www.instagram.com/ronas_it" target="_blank" data-opacity="1" data-fill="linear-gradient(190.05deg, #678EF9 0%, #7987F8 100%)" data-radius="25" data-blend="multiply" class="mouse-attract" data-v-2f7b29d6="">
+                                                                                                                                                                                                                        <span class="social-inner mouse-target" data-v-2f7b29d6="">
+                                                                                                                                                                                                                            <span class="social-fill" style="left:0px;top:0px;" data-v-2f7b29d6=""></span>
+                                                                                                                                                                                                                            <span class="icon icon-mask icon-instagram" data-v-2f7b29d6=""></span>
+                                                                                                                                                                                                                        </span>
+                                                                                                                                                                                                                    </a>
+                                                                                                                                                                                                                </span>
+                                                                                                                                                                                                                <span class="social social-facebook" data-v-2f7b29d6="" data-v-2cf38ec3="">
+                                                                                                                                                                                                                    <a href="https://www.facebook.com/RonasITSoftware/" target="_blank" data-opacity="1" data-fill="linear-gradient(190.05deg, #3E9EFD 0%, #489AFC 100%)" data-radius="25" data-blend="multiply" class="mouse-attract" data-v-2f7b29d6="">
+                                                                                                                                                                                                                        <span class="social-inner mouse-target" data-v-2f7b29d6="">
+                                                                                                                                                                                                                            <span class="social-fill" style="left:0px;top:0px;" data-v-2f7b29d6=""></span>
+                                                                                                                                                                                                                            <span class="icon icon-mask icon-facebook" data-v-2f7b29d6=""></span>
+                                                                                                                                                                                                                        </span>
+                                                                                                                                                                                                                    </a>
+                                                                                                                                                                                                                </span>
+                                                                                                                                                                                                                <span class="social social-dribbble" data-v-2f7b29d6="" data-v-2cf38ec3="">
+                                                                                                                                                                                                                    <a href="https://dribbble.com/ronasit" target="_blank" data-opacity="1" data-radius="25" data-blend="multiply" class="mouse-attract" data-v-2f7b29d6="">
+                                                                                                                                                                                                                        <span class="social-inner mouse-target" data-v-2f7b29d6="">
+                                                                                                                                                                                                                            <span class="social-fill" style="left:0px;top:0px;" data-v-2f7b29d6=""></span>
+                                                                                                                                                                                                                            <span class="icon icon-mask icon-dribbble" data-v-2f7b29d6=""></span>
+                                                                                                                                                                                                                        </span>
+                                                                                                                                                                                                                    </a>
+                                                                                                                                                                                                                </span>
+                                                                                                                                                                                                                <span class="social social-behance" data-v-2f7b29d6="" data-v-2cf38ec3="">
+                                                                                                                                                                                                                    <a href="https://www.behance.net/RonasIT" target="_blank" data-opacity="1" data-fill="linear-gradient(190.05deg, #33B4FF 0%, #20A9FF 100%)" data-radius="25" data-blend="multiply" class="mouse-attract" data-v-2f7b29d6="">
+                                                                                                                                                                                                                        <span class="social-inner mouse-target" data-v-2f7b29d6="">
+                                                                                                                                                                                                                            <span class="social-fill" style="left:0px;top:0px;" data-v-2f7b29d6=""></span>
+                                                                                                                                                                                                                            <span class="icon icon-mask icon-behance" data-v-2f7b29d6=""></span>
+                                                                                                                                                                                                                        </span>
+                                                                                                                                                                                                                    </a>
+                                                                                                                                                                                                                </span>
+                                                                                                                                                                                                                <span class="social social-linkedin" data-v-2f7b29d6="" data-v-2cf38ec3="">
+                                                                                                                                                                                                                    <a href="https://www.linkedin.com/company/ronas-it" target="_blank" data-opacity="1" data-fill="linear-gradient(190.05deg, #5BC9FE 0%, #33B4FF 100%)" data-radius="25" data-blend="multiply" class="mouse-attract" data-v-2f7b29d6="">
+                                                                                                                                                                                                                        <span class="social-inner mouse-target" data-v-2f7b29d6="">
+                                                                                                                                                                                                                            <span class="social-fill" style="left:0px;top:0px;" data-v-2f7b29d6=""></span>
+                                                                                                                                                                                                                            <span class="icon icon-mask icon-linkedin" data-v-2f7b29d6=""></span>
+                                                                                                                                                                                                                        </span>
+                                                                                                                                                                                                                    </a>
+                                                                                                                                                                                                                </span>
+                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div class="row row-smallpadding footer-bottom" data-v-836cd5f2="">
+                                                                                                                                                                                                            <div class="footer-copy" data-v-836cd5f2="">© 2020 Ronas IT.
+                                                                                                                                                                                                                <br class="mobile-only" data-v-836cd5f2=""> All rights reserved.
+                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                <div class="footer-policies" data-v-836cd5f2="">
+                                                                                                                                                                                                                    <a href="/privacy-policy" class="lined" data-v-836cd5f2="">Privacy Policy</a>
+                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                    </section>
+                                                                                                                                                                                                </div>
+                                                                                                                                                                                                <div class="cookies-notification hidden">
+                                                                                                                                                                                                    <div class="cookies-notification-text">
+            We use cookies to enable necessary site functionality, to provide the best possible user experience, and to tailor future communications.
+                                                                                                                                                                                                        <br> 
+            By using this website, you agree to the use of cookies as outlined in Ronas IT’s online 
+                                                                                                                                                                                                            <a href="/privacy-policy" target="_blank">Privacy Policy</a>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div class="cookies-notification-actions">
+                                                                                                                                                                                                            <a data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-filled">
+                                                                                                                                                                                                                <span class="button-inner mouse-target">
+                                                                                                                                                                                                                    <span class="button-fill" style="left:0px;top:0px;"></span>
+                                                                                                                                                                                                                    <span class="button-caption">Accept Cookies</span>
+                                                                                                                                                                                                                </span>
+                                                                                                                                                                                                            </a>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                </div>
+                                                                                                                                                                                            </div>
+                                                                                                                                                                                            <!---->
+                                                                                                                                                                                            <!---->
+                                                                                                                                                                                        </div>
+                                                                                                                                                                                        <div class="global-ui">
+                                                                                                                                                                                            <!---->
+                                                                                                                                                                                        </div>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <script src="/assets/js/app.8438fd32.js" defer=""></script>
+                                                                                                                                                                                    <script src="/assets/js/51.949d4503.js" defer=""></script>
+                                                                                                                                                                                    <script src="/assets/js/6.f4390d76.js" defer=""></script>
+                                                                                                                                                                                    <script src="/assets/js/13.adc412b8.js" defer=""></script>
+                                                                                                                                                                                    <script src="/assets/js/9.016a4233.js" defer=""></script>
+                                                                                                                                                                                    <script src="/assets/js/40.b0e61309.js" defer=""></script>
+                                                                                                                                                                                    <script src="/assets/js/34.08efd59e.js" defer=""></script>
+                                                                                                                                                                                    <script src="/assets/js/23.0551c182.js" defer=""></script>
+                                                                                                                                                                                    <script src="/assets/js/21.879d8563.js" defer=""></script>
+                                                                                                                                                                                    <script src="/assets/js/22.67206a89.js" defer=""></script>
+                                                                                                                                                                                    <script src="/assets/js/12.a7023268.js" defer=""></script>
+                                                                                                                                                                                    <script src="/assets/js/25.2cf3f5fa.js" defer=""></script>
+                                                                                                                                                                                    <script src="/assets/js/31.79b8a6a8.js" defer=""></script>
+                                                                                                                                                                                    <script src="/assets/js/30.7be9f5b2.js" defer=""></script>
+                                                                                                                                                                                    <script src="/assets/js/10.0f1cfd7f.js" defer=""></script>
+                                                                                                                                                                                </body>
+</html>
