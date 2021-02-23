@@ -3023,7 +3023,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .navbar-trans .navbar-logo {
-  content: url(../images/logo-light.png);
+  content: url(/assets/images/logo-light.png);
 }
 
 .navbar-trans .navbar-logo-dark {
@@ -7883,7 +7883,7 @@ form .input-error-2:focus {
 }
 
 .main-demo-hero .hero-content-wrapper .hero-content .hero-lead, .fs-video-hero .hero-content-wrapper .hero-content .hero-lead, .fw-video-hero .hero-content-wrapper .hero-content .hero-lead, .text-slider-hero .hero-content-wrapper .hero-content .hero-lead, .freelancer-hero .hero-content-wrapper .hero-content .hero-lead, .agency2-hero .hero-content-wrapper .hero-content .hero-lead, .animated-hero .hero-content-wrapper .hero-content .hero-lead, .web-app-hero .hero-content-wrapper .hero-content .hero-lead {
-  font-size: 6em;
+  font-size: 4em;
   font-weight: 700;
   letter-spacing: 2px;
 }
