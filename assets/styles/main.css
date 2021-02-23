@@ -8125,6 +8125,7 @@ form .input-error-2:focus {
 .fs-video-hero, .fw-video-hero {
   background: url(http://placehold.it/2440x1578);
   background-size: cover;
+  overflow: hidden;
 }
 
 .fs-video-hero .bg-overlay, .fw-video-hero .bg-overlay {
