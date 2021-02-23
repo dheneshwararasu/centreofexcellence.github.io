@@ -1,523 +1,1090 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centre Of Excellence | STRATEQ Group.</title>
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Definity - Full Screen Video Multipage</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.css">
+        <link rel="stylesheet" href="assets/fonts/linea-font/css/linea-font.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+        <!-- Slider -->
+        <link rel="stylesheet" href="assets/styles/vendor/slick.css">
+        <!-- Lightbox -->
+        <link rel="stylesheet" href="assets/styles/vendor/magnific-popup.css">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="assets/styles/vendor/animate.css">
 
-    <link rel="apple-touch-icon" sizes="56x56" href="/favicon/favicon-56.png">
-    <link rel="apple-touch-icon" sizes="112x112" href="/favicon/favicon-112.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/favicon-114.png">
-    <link rel="icon" type="image/png" sizes="128x128" href="/favicon/favicon-128.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="/favicon/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16.png">
-    <link rel="shortcut icon" href="/favicon/favicon-32.png">
-    <script async="" src="js/analytics.js"></script>
-    <script src="js/widget.js" async="true"></script>
+
+        <!-- Definity CSS -->
+        <link rel="stylesheet" href="assets/styles/main.css">
+        <link rel="stylesheet" href="assets/styles/responsive.css">
+
+        <!-- JS -->
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body id="page-top">
+        
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
 
 
+        <!-- ========== Preloader ========== -->
 
+        <div class="preloader">
+          <img src="assets/images/loader.svg" alt="Loading...">
+        </div>
 
-    <link rel="preload" href="assets/css/app.css" as="style">
-    <link rel="preload" href="assets/js/script.js" as="script">
-    <link rel="prefetch" href="assets/js/fetchscript.js">
-    <link rel="stylesheet" href="assets/css/app.css">
-    <style type="text/css">
-        .medium-zoom-overlay {
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            opacity: 0;
-            transition: opacity .3s;
-            will-change: opacity
-        }
+        
+                
+        <!-- ========== Navigation ========== -->
 
-        .medium-zoom--opened .medium-zoom-overlay {
-            cursor: pointer;
-            cursor: zoom-out;
-            opacity: 1
-        }
+        <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
-        .medium-zoom-image {
-            cursor: pointer;
-            cursor: zoom-in;
-            transition: transform .3s cubic-bezier(.2, 0, .2, 1) !important
-        }
+              <!-- Logo -->
+              <a class="navbar-brand" href="index.html"><img class="navbar-logo" src="assets/images/logo.png" alt="Definity - Logo"></a>
+            </div><!-- / .navbar-header -->
 
-        .medium-zoom-image--hidden {
-            visibility: hidden
-        }
+            <!-- Navbar Links -->
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
 
-        .medium-zoom-image--opened {
-            position: relative;
-            cursor: pointer;
-            cursor: zoom-out;
-            will-change: transform
-        }
-    </style>
-    <meta name="description" content="We design, develop and maintain web and mobile applications since 2007. 60+ team members, 2 offices and more than 300 projects completed.">
-    <meta name="keywords" content="development, developer, designer, software development, custom software development, design, product design, outsourcing, software outsourcing, web, mobile, web development, mobile development, desktop development, developer, developers, programming, programmers, DevOps, system administration, iOS, Android, iPad, Android app, iOS app, application, mobile app, mobile application, logo, landing page, UI, UX, PHP, HTML, CSS, Angular, JS, Javascript, Typescript, TS, Vue, Vue.js, Angular.js, Node.js, Express.js, React, React.js, Nest.js, Redux, AWS, GCP, Google Cloud, Firebase, MySQL, Mongo, MongoDB, PostgreSQL, Figma, Swift, Kotlin, C++, C, C#, brand materials design, mockups, web design, mobile design, prototype, MVP, project management, QA, maintenance, minimum viable product, project requirements, project management, SaaS, gitlab, healthcare, finance, HR, Human Relation">
-    <meta name="theme-color" content="#3eaf7c">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="og:type" content="website">
-    <meta name="og:url" content="https://www.ronasit.com/">
-    <meta name="og:image" content="https://ronasit-website.web.app/favicon/preview.png">
-    <meta name="og:title" content="Ronas IT. Web and mobile applications for startups and businesses.">
-</head>
+                <!-- Home -->
+                <li class="dropdown mega-fw">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Home<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <div class="row">
 
-<body>
-    <div id="app">
-        <div>
-            <div><input type="checkbox" id="menu-checkbox" class="header-menu-checkbox"> <input type="checkbox" id="theme-checkbox" class="theme-checkbox">
-                <div class="content__hero">
-                    <section class="section hero section-active">
-                        <div class="container">
-                            <h1>
-                                <a href="/services/#design" class="underlined underlined-angular hero-design">Start.</a>
-                                <a href="/services/#development" class="underlined underlined-dashed hero-development">Train.</a>
-                                <a href="/services/#maintenance" class="underlined underlined-waved hero-maintenance">Practice.</a>
+                      <!-- Multi Page -->
+                      <div class="col-lg-3 mb-sm-30">
+                        <li class="dropdown-header">Multipage</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="index-main-mp.html" target="_blank">Main Demo</a></li>
+                        <li><a href="index-fs-slider-mp.html" target="_blank">Full Screen Slider</a></li>
+                        <li><a href="index-fs-video-mp.html" target="_blank">Full Screen Video</a></li>
+                        <li><a href="index-kenburn-mp.html" target="_blank">Kenburn Slider</a></li>
+                        <li><a href="index-fw-slider-mp.html" target="_blank">Full Width Slider</a></li>
+                      </div>
 
-                                <div class="hero-overlay">
-                                    <video src="/img/design.mp4" muted="muted" autoplay="autoplay" playsinline="" loop="loop" class="hero-video hero-video-design"></video>
-                                    <video src="/img/development.mp4" muted="muted" autoplay="autoplay" playsinline="" loop="loop" class="hero-video hero-video-development"></video>
-                                    <video src="/img/maintenance.mp4" muted="muted" autoplay="autoplay" playsinline="" loop="loop" class="hero-video hero-video-maintenance"></video>
-                                    <span class="hero-background hero-background-design"></span>
-                                    <span class="hero-background hero-background-development"></span>
-                                    <span class="hero-background hero-background-maintenance"></span>
-                                </div>
+                      <div class="col-lg-3 mb-sm-30">
+                        <li class="dropdown-header">Multipage</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="index-animated-mp.html" target="_blank">Animated Heading</a></li>
+                        <li><a href="index-fw-video-mp.html" target="_blank">Full Width Video</a></li>
+                        <li><a href="index-text-mp.html" target="_blank">Text Slider</a></li>
+                        <li><a href="index-freelancer-mp.html" target="_blank">Freelancer</a></li>
+                        <li><a href="index-agency-mp.html" target="_blank">Agency</a></li>
+                        <li><a href="index-agency2-mp.html" target="_blank">Agency 2</a></li>
+                      </div>
 
-                            </h1>
+                      <!-- Onepage -->
+                      <div class="col-lg-3 mb-sm-30">
+                        <li class="dropdown-header">Onepage</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="index-main-op.html" target="_blank">Main Demo</a></li>
+                        <li><a href="index-fs-slider-op.html" target="_blank">Full Screen Slider</a></li>
+                        <li><a href="index-fs-video-op.html" target="_blank">Full Screen Video</a></li>
+                        <li><a href="index-kenburn-op.html" target="_blank">Kenburn Slider</a></li>
+                        <li><a href="index-fw-slider-op.html" target="_blank">Full Width Slider</a></li>
+                        <li><a href="index-fw-video-op.html" target="_blank">Full Width Video</a></li>
+                        <li><a href="index-landing.html" target="_blank">Landing Page</a></li>
+                      </div>
 
-                        </div>
-                    </section>
-                </div>
-                <div class="layout">
-                    <div class="cursor" style="top: 272px; left: 536px; width: 10px; height: 10px; border-radius: 30px; opacity: 0;"></div>
-                    <div>
-                        <header class="header">
-                            <a href="/" class="header-logo"><span class="header-logo-img"></span> <span class="header-logo-text"></span></a>
-                            <div class="container container-large">
-                                <ul class="header-menu">
-                                    <li class="header-item"><a href="/services" class="header-link">Services</a></li>
-                                    <li class="header-item"><a href="/projects" class="header-link">Solutions</a></li>
-                                    <li class="header-item"><a href="/blog" class="header-link">Blog</a></li>
-                                    <li class="header-item header-theme"><label for="theme-checkbox"><span class="header-theme-icon header-theme-icon-light"></span> <span class="header-theme-icon header-theme-icon-dark"></span></label></li>
-                                    <li class="header-item header-lang">
-                                        <div class="header-lang-dropdown"><button class="header-lang-trigger">En <span class="icon icon-mask icon-dropdown"></span></button>
-                                            <div class="header-lang-content"><span class="header-lang-item">En</span> <a class="header-lang-item">Ru</a></div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div> <label for="menu-checkbox" class="header-menu-toggle"><span class="header-menu-bars"></span> <span class="header-menu-close"></span></label>
-                            <div class="menu">
-                                <div class="container">
-                                    <div class="menu-main">
-                                        <div class="row">
-                                            <div class="col col-33 menu-menu">
-                                                <h3 class="headline">Menu</h3>
-                                                <ul><img data-src="/img/menu.jpg" loading="lazy" srcset="/img/menu.jpg 1000w, /img/blank.png 10w" sizes="(max-width: 767px) 5px, 30vw" class="menu-img lazy" src="/img/menu.jpg">
-                                                    <li><a href="/services" class="menu-item"><img data-src="/img/menu-services.jpg" loading="lazy" srcset="/img/menu-services.jpg 1000w, /img/blank.png 10w" sizes="(max-width: 767px) 5px, 30vw" class="menu-img lazy" src="/img/menu-services.jpg">
-                                                            Services
-                                                        </a></li>
-                                                    <li><a href="/projects" class="menu-item"><img data-src="/img/menu-projects.jpg" loading="lazy" srcset="/img/menu-projects.jpg 1000w, /img/blank.png 10w" sizes="(max-width: 767px) 5px, 30vw" class="menu-img dark-only lazy" src="/img/menu-projects.jpg"> <img data-src="/img/menu-projects-light.jpg" loading="lazy" srcset="/img/menu-projects-light.jpg 1000w, /img/blank.png 10w" sizes="(max-width: 767px) 5px, 30vw" class="menu-img light-only lazy" src="/img/menu-projects-light.jpg">
-                                                            Solutions
-                                                        </a></li>
-                                                    <li><a href="/blog" class="menu-item"><img data-src="/img/menu-blog.jpg" loading="lazy" srcset="/img/menu-blog.jpg 1000w, /img/blank.png 10w" sizes="(max-width: 767px) 5px, 30vw" class="menu-img lazy" src="/img/menu-blog.jpg">
-                                                            Blog
-                                                        </a></li>
-                                                    <li><a href="/contact" class="menu-item"><img data-src="/img/menu-contacts.jpg" loading="lazy" srcset="/img/menu-contacts.jpg 1000w, /img/blank.png 10w" sizes="(max-width: 767px) 5px, 30vw" class="menu-img lazy" src="/img/menu-contacts.jpg">
-                                                            Contacts
-                                                        </a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col col-33 menu-supplements">
-                                                <div class="menu-getintouch">
-                                                    <h3 class="headline">Get in touch</h3> <a href="mailto:info@coe.com" class="underlined underlined-waved">info@coe.com</a>
-                                                </div>
-                                                <div class="menu-theme">
-                                                    <h3 class="headline">UI Theme</h3> <label for="theme-checkbox" class="menu-theme-switch"><span class="menu-theme-label">Dark</span> <span class="menu-theme-label">Light</span></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menu-footer"><span>English</span> / <a href="/ru">Russian</a></div>
-                                </div>
-                            </div>
-                        </header> 
+                      <div class="col-md-3 mb-sm-30">
+                        <li class="dropdown-header">Onepage</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="index-animated-op.html" target="_blank">Animated Heading</a></li>
+                        <li><a href="index-text-op.html" target="_blank">Text Slider</a></li>
+                        <li><a href="index-freelancer-op.html" target="_blank">Freelancer</a></li>
+                        <li><a href="index-agency-op.html" target="_blank">Agency</a></li>
+                        <li><a href="index-agency2-op.html" target="_blank">Agency 2</a></li>
+                        <li><a href="index-app-landing.html" target="_blank">Mobile App</a></li>
+                        <li><a href="index-web-app-landing.html" target="_blank">Web App</a></li>
                         
-                        <a href="/contact" data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="mouse-attract button button-filled header-estimate"><span class="button-inner mouse-target" style="transform: translate(-0.303758px, -1.3875px);"><span class="button-fill" style="left: 80.5156px; top: -7px;"></span> <span class="button-caption">Get Started</span></span></a>
+                      </div>
+                    </div><!-- / .row -->
+                  </ul><!-- / .dropdown-menu -->
+                </li><!-- / Home -->
+                
+
+                <!-- Elements -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Elements <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <div class="row">
+
+                      <!-- Basic -->
+                      <div class="col-lg-6 mb-sm-30">
+                        <li class="dropdown-header">Basic</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="elements/typography.html" target="_blank"><i class="fa fa-font"></i> Typography</a></li>
+                        <li><a href="elements/buttons.html" target="_blank"><i class="fa fa-bold"></i> Buttons</a></li>
+                        <li><a href="elements/forms.html" target="_blank"><i class="fa fa-send"></i> Forms</a></li>
+                        <li><a href="elements/grid.html" target="_blank"><i class="fa fa-th"></i> Grid</a></li>
+                        <li><a href="elements/alerts.html" target="_blank"><i class="fa fa-info-circle"></i> Alerts</a></li>
+                        <li><a href="elements/labels.html" target="_blank"><i class="fa fa-tags"></i> Labels</a></li>
+                        <li><a href="elements/progress-bars.html" target="_blank"><i class="fa fa-tasks"></i> Progress Bars</a></li>
+                        <li><a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank"><i class="fa fa-flag"></i> Font Awesome</a></li>
+                        <li><a href="elements/line-icons-page.html" target="_blank"><i class="fa fa-flag-o"></i> Line Icons</a></li>
+                        <li><a href="elements/linea-icons-page.html" target="_blank"><i class="fa fa-flag-o"></i> Line Icons 2</a></li>
+                      </div>
+
+                      <!-- Layout -->
+                      <div class="col-lg-6 mb-sm-30">
+                        <li class="dropdown-header">Layout</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="elements/headers.html" target="_blank"><i class="fa fa-header"></i> Headers</a></li>
+                        <li><a href="elements/footers.html" target="_blank"><i class="fa fa-leaf"></i> Footers</a></li>
+                        <li><a href="elements/features.html" target="_blank"><i class="fa fa-star"></i> Features <span class="label label-warning">Hot</span></a></li>
+                        <li><a href="elements/cta.html" target="_blank"><i class="fa fa-link"></i> CTA</a></li>
+                        <li><a href="elements/counters.html" target="_blank"><i class="fa fa-circle-o-notch"></i> Counters</a></li>
+                        <li><a href="elements/pricing.html" target="_blank"><i class="fa fa-dollar"></i> Pricing</a></li>
+                        <li><a href="elements/team.html" target="_blank"><i class="fa fa-users"></i> Team</a></li>
+                        <li><a href="elements/testimonials.html" target="_blank"><i class="fa fa-comment"></i> Testimonials</a></li>
+                        <li><a href="elements/hover.html" target="_blank"><i class="fa fa-image"></i> Hover</a></li>
+                        <li><a href="elements/tables.html" target="_blank"><i class="fa fa-table"></i> Tables <span class="label label-red">New</span></a></li>
+                      </div>
+
+                    </div><!-- / .row -->
+                  </ul><!-- / .dropdown-menu -->
+                </li><!-- / Elements -->
+
+
+                <!-- Pages -->
+                <li class="dropdown mega-fw">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <div class="row">
+                      
+                      <!-- Introduction -->
+                      <div class="col-lg-3 mb-sm-30">
+                        <li class="dropdown-header">Introduction</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="pages/about-1.html">Abouts Us 1</a></li>
+                        <li><a href="pages/about-2.html">About Us 2</a></li>
+                        <li><a href="pages/team-1.html">Team Members 1</a></li>
+                        <li><a href="pages/team-2.html">Team Members 2</a></li>
+                        <li><a href="pages/clients.html">Clients</a></li>
+                      </div>
+
+                      <!-- Contact -->
+                      <div class="col-lg-3 mb-sm-30">
+                        <li class="dropdown-header">Contact</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="pages/contact-1.html">Contact Page 1</a></li>
+                        <li><a href="pages/contact-2.html">Contact Page 2</a></li>
+                        <li><a href="pages/contact-3.html">Contact Page 3</a></li>
+                      </div>
+
+                      <!-- Utility -->
+                      <div class="col-lg-3 mb-sm-30">
+                        <li class="dropdown-header">Utility</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="pages/services-1.html">Services</a></li>
+                        <li><a href="pages/faq-1.html">F.A.Q. Page 1</a></li>
+                        <li><a href="pages/faq-2.html">F.A.Q. Page 2</a></li>
+                        <li><a href="pages/login-1.html">Login Page 1</a></li>
+                        <li><a href="pages/login-2.html">Login Page 2</a></li>
+                      </div>
+
+                      <!-- Miscellaneous -->
+                      <div class="col-lg-3 mb-sm-30">
+                        <li class="dropdown-header">Other</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="404.html">404 Page</a></li>
+                        <li><a href="pages/maintenance.html">Maintenance Page</a></li>
+                        <li><a href="pages/coming-soon-1.html">Coming Soon 1</a></li>
+                        <li><a href="pages/coming-soon-2.html">Coming Soon 2</a></li>
+                        <li><a href="pages/blank.html">Blank Page</a></li>
+                      </div>
+
+                    </div><!-- / .row -->
+                  </ul><!-- / .dropdown-menu -->
+                </li><!-- / Pages -->
+                
+
+                <!-- Portfolio -->
+                <li class="dropdown mega-fw">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <div class="row">
+                      
+                      <!-- Full Width -->
+                      <div class="col-lg-3 mb-sm-30">
+                        <li class="dropdown-header">Full Width</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="pages/portfolio/portfolio-fw-1col.html">Full Width 1 Column</a></li>
+                        <li><a href="pages/portfolio/portfolio-fw-2col.html">Full Width 2 Columns</a></li>
+                        <li><a href="pages/portfolio/portfolio-fw-3col.html">Full Width 3 Columns</a></li>
+                        <li><a href="pages/portfolio/portfolio-fw-4col.html">Full Width 4 Columns</a></li>
+                      </div>
+
+                      <!-- Boxed -->
+                      <div class="col-lg-3 mb-sm-30">
+                        <li class="dropdown-header">Boxed</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="pages/portfolio/portfolio-boxed-1col.html">Boxed 1 Columns</a></li>
+                        <li><a href="pages/portfolio/portfolio-boxed-2col.html">Boxed 2 Columns</a></li>
+                        <li><a href="pages/portfolio/portfolio-boxed-3col.html">Boxed 3 Columns</a></li>
+                        <li><a href="pages/portfolio/portfolio-boxed-4col.html">Boxed 4 Columns</a></li>
+                      </div>
+
+                      <!-- Masonry -->
+                      <div class="col-lg-3 mb-sm-30">
+                        <li class="dropdown-header">Masonry</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="pages/portfolio/portfolio-masonry-1.html">Masonry Layout 1</a></li>
+                        <li><a href="pages/portfolio/portfolio-masonry-2.html">Masonry Layout 2</a></li>
+                        <li><a href="pages/portfolio/portfolio-masonry-3.html">Masonry Layout 3</a></li>
+                      </div>
+
+                      <!-- Other -->
+                      <div class="col-lg-3 mb-sm-30">
+                        <li class="dropdown-header">Other</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="pages/portfolio/portfolio-single-1.html">Portfolio Single 1</a></li>
+                        <li><a href="pages/portfolio/portfolio-single-2.html">Portfolio Single 2</a></li>
+                        <li><a href="pages/portfolio/portfolio-single-3.html">Portfolio Single 3</a></li>
+                        <li><a href="pages/portfolio/portfolio-single-4.html">Portfolio Single 4</a></li>
+                      </div>
+
+                    </div><!-- / .row -->
+                  </ul><!-- / .dropdown-menu -->
+                </li><!-- / Portfolio -->
+                
+
+                <!-- Blog -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="pages/blog/blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                    <li><a href="pages/blog/blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                    <li><a href="pages/blog/blog-2col.html">Blog 2 Columns</a></li>
+                    <li><a href="pages/blog/blog-3col.html">Blog 3 Columns</a></li>
+                    <li><a href="pages/blog/blog-masonry-2col.html">Blog Masonry 2 Columns</a></li>
+                    <li><a href="pages/blog/blog-masonry-3col.html">Blog Masonry 3 Columns</a></li>
+                    <li><a href="pages/blog/blog-post.html">Blog Single</a></li>
+                  </ul>
+                </li><!-- / Blog -->
+
+
+                <!-- Shop -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="caret"></span></a>
+                  <ul class="dropdown-menu bg-solid">
+                    <div class="row">
+                      <div class="col-lg-7">
+                        <li class="dropdown-header">Shop</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="pages/shop/shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                        <li><a href="pages/shop/shop-left-sidebar.html">Shop Left Sidebar</a></li>
+                        <li><a href="pages/shop/shop-4col.html">Shop 4 Columns</a></li>
+                        <li><a href="pages/shop/shop-single.html">Single Product</a></li>
+                        <li><a href="pages/shop/shop-checkout.html">Checkout Page</a></li>
+                      </div>
+                      <div class="col-lg-5 dropdown-banner">
+                        <img src="assets/images/shop/baner-shop-white.png" alt="Definity eCommerce update">
+                      </div>
                     </div>
-                    <div class="page">
-                        <main>
-                            <div class="content__default">
-                                <section class="section home-about section-active">
-                                    <div class="container fadeonscroll active">
-                                        <h2 class="headline">What We Do</h2>
-                                        <div class="home-about-content">
-                                            <div class="content__about">
-                                                <p>Accelerating Digital Transformation in the New Normal. We prepare your business for future disruption and growth.</p>
-                                            </div>
-                                        </div> <a href="/services" data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="more mouse-attract button button-undefined"><span class="button-inner mouse-target"><span class="button-fill" style="left:0px;top:0px;"></span> <span class="button-caption">View More</span></span></a>
-                                    </div>
-                                </section>
-                                <div>
-                                    <section class="section home-services">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col col-40">
-                                                    <h2 class="fadeonscroll active">
-                                                        <div class="home-services-number">01</div>
-                                                        Start
-                                                    </h2>
-                                                </div>
-                                                <div class="col col-60">
-                                                    <div class="home-services-description fadeonscroll active">Establishing the right visual connection with your customers and users by creating eye-catching and memorable designs as well as meaningful user experience.</div> <a href="/services/#design" data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="more fadeonscroll mouse-attract button button-undefined active"><span class="button-inner mouse-target"><span class="button-fill" style="left:0px;top:0px;"></span> <span class="button-caption">View More</span></span></a>
-                                                    <div class="home-services-details fadeonscroll active">
-                                                        <div class="home-service" data-v-49d6d914=""><a href="/services" class="home-service-link" data-v-49d6d914=""></a> <img data-src="/img/websites.jpg" loading="lazy" class="lazy" data-v-49d6d914="" src="/img/websites.jpg">
-                                                            <h3 data-v-49d6d914="">Websites and Platforms</h3>
-                                                            <p data-v-49d6d914="">
-                                                                We design projects of different complexity and size. No matter if it is a simple single-page website or a complex admin panel with numerous dashboards - we will make it visually pleasing, consistent, and user-friendly.
-                                                            </p>
-                                                        </div>
-                                                        <div class="home-service" data-v-49d6d914=""><a href="/services" class="home-service-link" data-v-49d6d914=""></a> <img data-src="/img/mobile-apps.jpg" loading="lazy" class="lazy" data-v-49d6d914="" src="/img/mobile-apps.jpg">
-                                                            <h3 data-v-49d6d914="">Mobile Applications</h3>
-                                                            <p data-v-49d6d914="">
-                                                                We don’t simply design beautiful interfaces but&nbsp;craft them in&nbsp;accordance with&nbsp;each platforms’ guidelines to&nbsp;make the&nbsp;use of&nbsp;your app intuitive to&nbsp;users.
-                                                            </p>
-                                                        </div>
-                                                        <div class="home-service" data-v-49d6d914=""><a href="/services" class="home-service-link" data-v-49d6d914=""></a> <img data-src="/img/branding.jpg" loading="lazy" class="lazy" data-v-49d6d914="" src="/img/branding.jpg">
-                                                            <h3 data-v-49d6d914="">Strategy and&nbsp;Branding</h3>
-                                                            <p data-v-49d6d914="">
-                                                                We identify your brand by&nbsp;developing a&nbsp;logo, corporate identity, user manuals, any&nbsp;mockups, and souvenir products.
-                                                            </p>
-                                                        </div>
-                                                        <div class="home-service" data-v-49d6d914=""><a href="/services" class="home-service-link" data-v-49d6d914=""></a> <img data-src="/img/concept.jpg" loading="lazy" class="lazy" data-v-49d6d914="" src="/img/concept.jpg">
-                                                            <h3 data-v-49d6d914="">Design<br data-v-49d6d914="">Concept</h3>
-                                                            <p data-v-49d6d914="">
-                                                                We’ll make a&nbsp;design concept for a&nbsp;site or&nbsp;mobile application to attract your audience and&nbsp;make your awesome product even more awesome.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    <section class="section home-services section-active">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col col-40">
-                                                    <h2 class="fadeonscroll active">
-                                                        <div class="home-services-number">02</div>
-                                                        Train
-                                                    </h2>
-                                                </div>
-                                                <div class="col col-60">
-                                                    <div class="home-services-description fadeonscroll active">Implementing your project with scalable architecture design, modern technology, and an excellent level of data security.</div> <a href="/services/#development" data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="more fadeonscroll mouse-attract button button-undefined active"><span class="button-inner mouse-target"><span class="button-fill" style="left:0px;top:0px;"></span> <span class="button-caption">View More</span></span></a>
-                                                    <div class="home-services-details fadeonscroll active">
-                                                        <div class="home-service" data-v-49d6d914=""><a href="/services" class="home-service-link" data-v-49d6d914=""></a> <img data-src="/img/web-services.jpg" loading="lazy" class="lazy" data-v-49d6d914="" src="/img/web-services.jpg">
-                                                            <h3 data-v-49d6d914="">Web<br data-v-49d6d914="">Services</h3>
-                                                            <p data-v-49d6d914="">
-                                                                We create web products tailored exclusively for your business goals, be it a high converting landing page, a complex web app to automate your processes or a high-load platform with sensitive data.
-                                                            </p>
-                                                        </div>
-                                                        <div class="home-service" data-v-49d6d914=""><a href="/services" class="home-service-link" data-v-49d6d914=""></a> <img data-src="/img/native.jpg" loading="lazy" class="lazy" data-v-49d6d914="" src="/img/native.jpg">
-                                                            <h3 data-v-49d6d914="">Native Mobile Development</h3>
-                                                            <p data-v-49d6d914="">
-                                                                We build custom mobile applications for both iOS (with Swift) and Android (with Kotlin) according to Apple and Google guidelines and can get them released to stores quickly.
-                                                            </p>
-                                                        </div>
-                                                        <div class="home-service" data-v-49d6d914=""><a href="/services" class="home-service-link" data-v-49d6d914=""></a> <img data-src="/img/hybrid.jpg" loading="lazy" class="lazy" data-v-49d6d914="" src="/img/hybrid.jpg">
-                                                            <h3 data-v-49d6d914="">Hybrid Mobile Development</h3>
-                                                            <p data-v-49d6d914="">
-                                                                With this approach we develop a single app for use on multiple platforms like Android and iOS (with React Native and Flutter).
-                                                            </p>
-                                                        </div>
-                                                        <div class="home-service" data-v-49d6d914=""><a href="/services" class="home-service-link" data-v-49d6d914=""></a> <img data-src="/img/quality.jpg" loading="lazy" class="lazy" data-v-49d6d914="" src="/img/quality.jpg">
-                                                            <h3 data-v-49d6d914="">Quality<br data-v-49d6d914="">Assurance</h3>
-                                                            <p data-v-49d6d914="">
-                                                                We safeguard your product’s quality and success and with manual and automated testing.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    <section class="section home-services section-active">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col col-40">
-                                                    <h2 class="fadeonscroll active">
-                                                        <div class="home-services-number">03</div>
-                                                        Practice
-                                                    </h2>
-                                                </div>
-                                                <div class="col col-60">
-                                                    <div class="home-services-description fadeonscroll active">Establishing the right visual connection with your customers and users by creating eye-catching and memorable designs as well as meaningful user experience.</div> <a href="/services/#maintenance" data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="more fadeonscroll mouse-attract button button-undefined active"><span class="button-inner mouse-target"><span class="button-fill" style="left:0px;top:0px;"></span> <span class="button-caption">View More</span></span></a>
-                                                    <div class="home-services-details fadeonscroll active">
-                                                        <div class="home-service" data-v-49d6d914=""><a href="/services" class="home-service-link" data-v-49d6d914=""></a> <img data-src="/img/postrelease.jpg" loading="lazy" class="lazy" data-v-49d6d914="" src="/img/postrelease.jpg">
-                                                            <h3 data-v-49d6d914="">Post-release support</h3>
-                                                            <p data-v-49d6d914="">
-                                                                We help to&nbsp;keep projects up to&nbsp;date&nbsp;– from technology updates to&nbsp;new functionality implementation.
-                                                            </p>
-                                                        </div>
-                                                        <div class="home-service" data-v-49d6d914=""><a href="/services" class="home-service-link" data-v-49d6d914=""></a> <img data-src="/img/administration.jpg" loading="lazy" class="lazy" data-v-49d6d914="" src="/img/administration.jpg">
-                                                            <h3 data-v-49d6d914="">System Administration</h3>
-                                                            <p data-v-49d6d914="">
-                                                                Keeping your project up and running 24/7/365 is important. We make this process easy and stress-free for you.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
-                                <section fill="#fff" class="section projects section-active">
-                                    <div class="projects-list">
-                                        <div class="project" data-v-5b01a66e=""><svg width="0" height="0" data-v-5b01a66e="">
-                                                <defs data-v-5b01a66e="">
-                                                    <clipPath clipPathUnits="objectBoundingBox" data-v-5b01a66e="" id="64">
-                                                        <circle cx="0.5" cy="1.2" r="0" transform="translate(0.5 1.2) scale(1 1) translate(-0.5 -1.2)" data-v-5b01a66e=""></circle>
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <div class="container" data-v-5b01a66e="">
-                                                <div class="row" data-v-5b01a66e="">
-                                                    <div class="col col-50" data-v-5b01a66e="">
-                                                        <div class="project-title headline" data-v-5b01a66e="">
-                                                            Bank of America
-                                                        </div>
-                                                        <div class="project-description" data-v-5b01a66e="">
-                                                            A redesign concept of&nbsp;the&nbsp;Bank&nbsp;of&nbsp;America's mobile app
-                                                        </div>
-                                                        <div class="project-tags" data-v-5b01a66e=""><a href="#" class="project-tag" data-v-5b01a66e="">mobile</a> <a href="#" class="project-tag" data-v-5b01a66e="">design</a></div> <a href="https://www.behance.net/gallery/107105993/Bank-of-America-Online-Banking-App-Redesign-Concept" target="_blank" data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="more mouse-attract button button-undefined" data-v-5b01a66e=""><span class="button-inner mouse-target"><span class="button-fill" style="left:0px;top:0px;"></span> <span class="button-caption">View more</span></span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="project-preview-wrap" data-v-5b01a66e="">
-                                                <div class="project-preview" data-v-5b01a66e=""><a target="_blank" href="" class="project-link" data-v-5b01a66e=""></a>
-                                                    <div class="project-image" data-v-5b01a66e=""><img data-src="/projects/home-bankofamerica-dark.jpg" loading="lazy" class="dark-only lazy" src="/projects/home-bankofamerica-dark.jpg" data-v-5b01a66e=""> <img data-src="/projects/home-bankofamerica-light.jpg" loading="lazy" class="light-only lazy" src="/projects/home-bankofamerica-dark.jpg" data-v-5b01a66e=""></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project project-active" data-v-5b01a66e=""><svg width="0" height="0" data-v-5b01a66e="">
-                                                <defs data-v-5b01a66e="">
-                                                    <clipPath clipPathUnits="objectBoundingBox" data-v-5b01a66e="" id="68">
-                                                        <circle cx="0.5" cy="1.2" r="0" transform="translate(0.5 1.2) scale(1 1) translate(-0.5 -1.2)" data-v-5b01a66e=""></circle>
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <div class="container" data-v-5b01a66e="">
-                                                <div class="row" data-v-5b01a66e="">
-                                                    <div class="col col-50" data-v-5b01a66e="">
-                                                        <div class="project-title headline" data-v-5b01a66e="">
-                                                            Facta
-                                                        </div>
-                                                        <div class="project-description" data-v-5b01a66e="">
-                                                            An employee engagement and training web app
-                                                        </div>
-                                                        <div class="project-tags" data-v-5b01a66e=""><a href="#" class="project-tag" data-v-5b01a66e="">web</a> <a href="#" class="project-tag" data-v-5b01a66e="">design</a> <a href="#" class="project-tag" data-v-5b01a66e="">development</a></div> <a href="https://www.behance.net/gallery/103472575/HR-Management-Software-UIUX-Website-for-Facta" target="_blank" data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="more mouse-attract button button-undefined" data-v-5b01a66e=""><span class="button-inner mouse-target"><span class="button-fill" style="left:0px;top:0px;"></span> <span class="button-caption">View more</span></span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="project-preview-wrap" data-v-5b01a66e="">
-                                                <div class="project-preview" style="clip-path: url(&quot;#68&quot;); opacity: 1;" data-v-5b01a66e=""><a target="_blank" href="https://www.behance.net/gallery/103472575/HR-Management-Software-UIUX-Website-for-Facta" class="project-link" data-v-5b01a66e=""></a>
-                                                    <div class="project-image" data-v-5b01a66e=""><img data-src="/projects/home-facta-dark.jpg" loading="lazy" class="dark-only lazy" src="/projects/home-facta-dark.jpg" data-v-5b01a66e=""> <img data-src="/projects/home-facta-light.jpg" loading="lazy" class="light-only lazy" src="/projects/home-facta-light.jpg" data-v-5b01a66e=""></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project" data-v-5b01a66e=""><svg width="0" height="0" data-v-5b01a66e="">
-                                                <defs data-v-5b01a66e="">
-                                                    <clipPath clipPathUnits="objectBoundingBox" data-v-5b01a66e="" id="72">
-                                                        <circle cx="0.5" cy="1.2" r="0" transform="translate(0.5 1.2) scale(1 1) translate(-0.5 -1.2)" data-v-5b01a66e=""></circle>
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <div class="container" data-v-5b01a66e="">
-                                                <div class="row" data-v-5b01a66e="">
-                                                    <div class="col col-50" data-v-5b01a66e="">
-                                                        <div class="project-title headline" data-v-5b01a66e="">
-                                                            Seft-care
-                                                        </div>
-                                                        <div class="project-description" data-v-5b01a66e="">
-                                                            A self-care app that offers a personalized selection of guides and mentors
-                                                        </div>
-                                                        <div class="project-tags" data-v-5b01a66e=""><a href="#" class="project-tag" data-v-5b01a66e="">mobile</a> <a href="#" class="project-tag" data-v-5b01a66e="">design</a></div> <a href="https://www.behance.net/gallery/102596433/Self-care-Mobile-App-Design-Concept-UI-UX" target="_blank" data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="more mouse-attract button button-undefined" data-v-5b01a66e=""><span class="button-inner mouse-target"><span class="button-fill" style="left:0px;top:0px;"></span> <span class="button-caption">View more</span></span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="project-preview-wrap" data-v-5b01a66e="">
-                                                <div class="project-preview" style="clip-path: url(&quot;#72&quot;); opacity: 1;" data-v-5b01a66e=""><a target="_blank" href="https://www.behance.net/gallery/102596433/Self-care-Mobile-App-Design-Concept-UI-UX" class="project-link" data-v-5b01a66e=""></a>
-                                                    <div class="project-image" data-v-5b01a66e=""><img data-src="/projects/home-selfcare-dark.jpg" loading="lazy" class="dark-only lazy" src="/projects/home-selfcare-dark.jpg" data-v-5b01a66e=""> <img data-src="/projects/home-selfcare-light.jpg" loading="lazy" class="light-only lazy" src="/projects/home-selfcare-light.jpg" data-v-5b01a66e=""></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project" data-v-5b01a66e=""><svg width="0" height="0" data-v-5b01a66e="">
-                                                <defs data-v-5b01a66e="">
-                                                    <clipPath clipPathUnits="objectBoundingBox" data-v-5b01a66e="" id="76">
-                                                        <circle cx="0.5" cy="1.2" r="0" transform="translate(0.5 1.2) scale(1 1) translate(-0.5 -1.2)" data-v-5b01a66e=""></circle>
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <div class="container" data-v-5b01a66e="">
-                                                <div class="row" data-v-5b01a66e="">
-                                                    <div class="col col-50" data-v-5b01a66e="">
-                                                        <div class="project-title headline" data-v-5b01a66e="">
-                                                            Food Delivery
-                                                        </div>
-                                                        <div class="project-description" data-v-5b01a66e="">
-                                                            An on-demand food delivery app
-                                                        </div>
-                                                        <div class="project-tags" data-v-5b01a66e=""><a href="#" class="project-tag" data-v-5b01a66e="">mobile</a> <a href="#" class="project-tag" data-v-5b01a66e="">design</a></div> <a href="https://www.behance.net/gallery/104723621/Food-Delivery-Mobile-App-UIUX-Design" target="_blank" data-fill="#26A0F8" data-radius="[object Object]" data-blend="multiply" data-opacity="1" class="more mouse-attract button button-undefined" data-v-5b01a66e=""><span class="button-inner mouse-target"><span class="button-fill" style="left:0px;top:0px;"></span> <span class="button-caption">View more</span></span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="project-preview-wrap" data-v-5b01a66e="">
-                                                <div class="project-preview" style="clip-path: url(&quot;#76&quot;); opacity: 1;" data-v-5b01a66e=""><a target="_blank" href="https://www.behance.net/gallery/104723621/Food-Delivery-Mobile-App-UIUX-Design" class="project-link" data-v-5b01a66e=""></a>
-                                                    <div class="project-image" data-v-5b01a66e=""><img data-src="/projects/home-delivery-dark.jpg" loading="lazy" class="dark-only lazy" src="/projects/home-delivery-dark.jpg" data-v-5b01a66e=""> <img data-src="/projects/home-delivery-light.jpg" loading="lazy" class="light-only lazy" src="/projects/home-delivery-light.jpg" data-v-5b01a66e=""></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                
-                            </div>
-                        </main>
+                  </ul>
+                </li><!-- / Blog -->
+              </ul><!-- / .nav .navbar-nav -->
+              
+
+              <!-- Navbar Links Right -->
+              <ul class="nav navbar-nav navbar-right">
+
+                <!-- Cart -->
+                <li class="dropdown cart-nav">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart"></i> Cart</a>
+                  <ul class="dropdown-menu cart-dropdown">
+                    <li class="dropdown-header">Cart</li>
+                    <li role="separator" class="divider cart-sep-top"></li>
+                    <li>
+                      <div class="cart-item">
+                        <a href="pages/shop/shop-single.html"><img src="assets/images/shop/p-thumb-1.jpg" alt="Product Name" class="p-thumb"></a>
+                        <a href="#" class="cart-remove-btn"><span class="linea-arrows-square-remove"></span></a>
+                        <a href="pages/shop/shop-single.html" class="cp-name">Light Blue Suit</a>
+                        <p class="cp-price">1 x $359.99</p>
+                      </div>
+
+                      <div class="cart-item">
+                        <a href="pages/shop/shop-single.html"><img src="assets/images/shop/p-thumb-2.jpg" alt="Product Name" class="p-thumb"></a>
+                        <a href="#" class="cart-remove-btn"><span class="linea-arrows-square-remove"></span></a>
+                        <a href="pages/shop/shop-single.html" class="cp-name">Dark Blue Suit</a>
+                        <p class="cp-price">1 x $459.99</p>
+                      </div>
+                    </li>
+                    <li role="separator" class="divider cart-sep-bot"></li>
+                    <li>
+                      <h6 class="item-totals">Items Total: <span>$718.98</span></h6>
+                    </li>
+                    <li class="cart-btns">
+                      <a href="pages/shop/shop-checkout.html" class="btn-ghost btn-block">View Cart</a>
+                      <a href="pages/shop/shop-checkout.html" class="btn btn-block">Checkout</a>
+                    </li>
+
+                  </ul>
+                </li><!-- / Cart -->
+
+                <!-- Search -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i> Search</a>
+                  <ul class="dropdown-menu search-dropdown">
+                    <li><form action="post"><input type="search" class="form-control" placeholder="Search..."></form></li>
+                  </ul>
+                </li><!-- / Search -->
+
+                <!-- Languages -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">DE</a></li>
+                    <li><a href="#">FR</a></li>
+                    <li><a href="#">ES</a></li>
+                  </ul>
+                </li><!-- / Languages -->
+
+              </ul><!-- / .nav .navbar-nav .navbar-right -->
+
+            </div><!--/.navbar-collapse -->
+          </div><!-- / .container -->
+        </nav><!-- / .navbar -->
 
 
 
+        <!-- ========== Hero Cover ========== -->
 
+        <div class="fs-video-hero">
 
-                        <!--Footer-->
+          <!-- Video Background -->
+          <div id="fs-video-one-bg" class="player" 
+               data-property="{videoURL:'http://youtu.be/Scxs7L0vhZ4',containment:'.fs-video-hero',autoPlay:true, mute:true, startAt:71, stopAt:300, opacity:1}">
+          </div>
 
-                        <section class="section footer" data-v-836cd5f2="">
-                            <div class="container" data-v-836cd5f2="">
-                                <div class="footer-getintouch" data-v-836cd5f2="">
-                                    <h2 class="headline" data-v-836cd5f2="">Contacts</h2> <a href="/contact" class="underlined underlined-waved" data-v-836cd5f2="">Get In Touch</a>
-                                </div>
-                                <div class="footer-contacts" data-v-836cd5f2="">
-                                    <div class="row row-smallpadding" data-v-836cd5f2="">
-                                        
-                                        <div class="col col-25 col-mobile-50" data-v-836cd5f2="">
-                                            <strong data-v-836cd5f2="">Call</strong>
-                                            <a href="tel:+79953940476" data-v-836cd5f2="">+7 995 394-04-76</a><br data-v-836cd5f2="">
-                                        </div>
+          <div class="bg-overlay">
+                            
+            <!-- Hero Content -->
+            <div class="hero-content-wrapper">
+              <div class="hero-content">
+                
+                <h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s">Show<br> Your Story</h1>
+                <h4 class="h-alt hero-subheading wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s">Multipage &amp; Onepage HTML5 Templates</h4>
+                <a href="#services" class="btn btn-light wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Learn More</a>
 
-                                        <div class="col col-25 col-mobile-50" data-v-836cd5f2=""><strong data-v-836cd5f2="">Write</strong>
-                                            
-                                            <div data-v-836cd5f2="">
-                                                <a href="mailto:info@ronasit.com" class="lined" data-v-836cd5f2="">info@ronasit.com</a>
-                                            </div>
-
-                                            <div data-v-836cd5f2="">
-                                                <a href="https://t.me/ronas_it" target="_blank" class="lined" data-v-836cd5f2="">Telegram</a>
-                                            </div>
-
-                                            <div data-v-836cd5f2="">
-                                                <a href="https://wa.me/79953940476?text=Hi%20Ronas,%20I%20want%20you%20to%20help%20me%20with" target="_blank" class="lined" data-v-836cd5f2="">Whatsapp</a>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="col col-25 col-mobile-50" data-v-836cd5f2="">
-                                            <strong data-v-836cd5f2="">Omsk office</strong>
-                                            <span data-v-836cd5f2="">
-                                                644099<br data-v-836cd5f2="">
-                                                Gagarina st. 14, office 405<br data-v-836cd5f2="">
-                                                Omsk, Russia<br data-v-836cd5f2="">
-                                            </span>
-                                        </div>
-                                        
-                                        <div class="col col-25 col-mobile-50" data-v-836cd5f2="">
-                                            <strong data-v-836cd5f2="">Krasnodar office</strong>
-                                            <span data-v-836cd5f2="">
-                                                350000<br data-v-836cd5f2="">
-                                                Budennogo st. 129, block A, office A3.3<br data-v-836cd5f2="">
-                                                Krasnodar, Russia<br data-v-836cd5f2="">
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                
-                                <div class="footer-socials" data-v-836cd5f2="">
-                                    <div class="socials" data-v-2cf38ec3="" data-v-836cd5f2="">
-                                        
-                                        <span class="social social-instagram" data-v-2f7b29d6="" data-v-2cf38ec3="">
-                                            <a href="https://www.instagram.com/ronas_it" target="_blank" data-opacity="1" data-fill="linear-gradient(190.05deg, #678EF9 0%, #7987F8 100%)" data-radius="25" data-blend="multiply" class="mouse-attract" data-v-2f7b29d6="">
-                                                <span class="social-inner mouse-target" data-v-2f7b29d6="">
-                                                    <span class="social-fill" style="left:0px;top:0px;" data-v-2f7b29d6=""></span>
-                                                    <span class="icon icon-mask icon-instagram" data-v-2f7b29d6=""></span>
-                                                </span>
-                                            </a>
-                                        </span>
-                                        
-                                        <span class="social social-facebook" data-v-2f7b29d6="" data-v-2cf38ec3="">
-                                            <a href="https://www.facebook.com/RonasITSoftware/" target="_blank" data-opacity="1" data-fill="linear-gradient(190.05deg, #3E9EFD 0%, #489AFC 100%)" data-radius="25" data-blend="multiply" class="mouse-attract" data-v-2f7b29d6="">
-                                                <span class="social-inner mouse-target" data-v-2f7b29d6="">
-                                                    <span class="social-fill" style="left:0px;top:0px;" data-v-2f7b29d6=""></span>
-                                                    <span class="icon icon-mask icon-facebook" data-v-2f7b29d6=""></span>
-                                                </span>
-                                            </a>
-                                        </span>
-                                        
-                                        <span class="social social-dribbble" data-v-2f7b29d6="" data-v-2cf38ec3="">
-                                            <a href="https://dribbble.com/ronasit" target="_blank" data-opacity="1" data-radius="25" data-blend="multiply" class="mouse-attract" data-v-2f7b29d6="">
-                                                <span class="social-inner mouse-target" data-v-2f7b29d6="">
-                                                    <span class="social-fill" style="left:0px;top:0px;" data-v-2f7b29d6=""></span>
-                                                    <span class="icon icon-mask icon-dribbble" data-v-2f7b29d6=""></span>
-                                                </span>
-                                            </a>
-                                        </span>
-                                        
-                                        <span class="social social-behance" data-v-2f7b29d6="" data-v-2cf38ec3="">
-                                            <a href="https://www.behance.net/RonasIT" target="_blank" data-opacity="1" data-fill="linear-gradient(190.05deg, #33B4FF 0%, #20A9FF 100%)" data-radius="25" data-blend="multiply" class="mouse-attract" data-v-2f7b29d6="">
-                                                <span class="social-inner mouse-target" data-v-2f7b29d6="">
-                                                    <span class="social-fill" style="left:0px;top:0px;" data-v-2f7b29d6=""></span>
-                                                    <span class="icon icon-mask icon-behance" data-v-2f7b29d6=""></span>
-                                                </span>
-                                            </a>
-                                        </span>
-                                        
-                                        <span class="social social-linkedin" data-v-2f7b29d6="" data-v-2cf38ec3="">
-                                            <a href="https://www.linkedin.com/company/ronas-it" target="_blank" data-opacity="1" data-fill="linear-gradient(190.05deg, #5BC9FE 0%, #33B4FF 100%)" data-radius="25" data-blend="multiply" class="mouse-attract" data-v-2f7b29d6="">
-                                                <span class="social-inner mouse-target" data-v-2f7b29d6="">
-                                                    <span class="social-fill" style="left:0px;top:0px;" data-v-2f7b29d6=""></span>
-                                                    <span class="icon icon-mask icon-linkedin" data-v-2f7b29d6=""></span>
-                                                </span>
-                                            </a>
-                                        </span>
-                                    
-                                    </div>
-                                </div>
-                                <div class="row row-smallpadding footer-bottom" data-v-836cd5f2="">
-                                    <div class="footer-copy" data-v-836cd5f2="">© 2021 Centre of Excellence.<br class="mobile-only" data-v-836cd5f2=""> All rights reserved.</div>
-                                    <div class="footer-policies" data-v-836cd5f2=""><a href="/privacy-policy" class="lined" data-v-836cd5f2="">Privacy Policy</a></div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
+              </div>
             </div>
-            <!---->
-            <!---->
-        </div>
-        <div class="global-ui">
-            <svg data-v-5fd4ef0c="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.484 28.284" class="go-to-top">
-                <g data-v-5fd4ef0c="" transform="translate(-229 -126.358)">
-                    <rect data-v-5fd4ef0c="" fill="currentColor" width="35" height="5" rx="2" transform="translate(229 151.107) rotate(-45)"></rect>
-                    <rect data-v-5fd4ef0c="" fill="currentColor" width="35" height="5" rx="2" transform="translate(274.949 154.642) rotate(-135)"></rect>
-                </g>
-            </svg>
-        </div>
-    </div>
-</body>
+
+            <!-- Scroller -->
+            <a href="#services" class="scroller">
+              <span class="scroller-text">scroll down</span>
+              <span class="linea-basic-magic-mouse"></span>
+            </a>
+
+          </div><!-- / .bg-overlay -->
+        </div><!-- / .fs-video-hero -->
+
+
+
+        <!-- ========== Services ========== -->
+        
+        <section id="services" class="container section ft-centered">
+
+          <header class="sec-heading">
+            <h2>What we do</h2>
+            <span class="subheading">Lorem ipsum dolor sit amet, consectetur</span>
+          </header>
+
+          <div class="row">
+            
+            <!-- Item 1 -->
+            <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-dark-spin wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
+              <span class="et-tools"></span>
+              <h5>Web Design</h5>
+              <p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius, vero.</p>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-dark-spin wow zoomIn" data-wow-duration=".6s">
+              <span class="et-desktop"></span>
+              <h5>Development</h5>
+              <p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius, vero.</p>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-dark-spin wow zoomIn" data-wow-duration=".6s">
+              <span class="et-anchor"></span>
+              <h5>Branding</h5>
+              <p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius, vero.</p>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-dark-spin wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
+              <span class="et-strategy"></span>
+              <h5>Marketing</h5>
+              <p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius, vero.</p>
+            </div>
+
+          </div><!-- / .row -->
+        </section><!-- / .ft-frames -->
+
+
+
+        <!-- ========== Number Counters - Parallax ========== -->
+
+        <div class="number-counters">
+          <div class="container">
+            <div id="counters" class="row count-wrapper">
+              
+              <!-- Item 1 -->
+              <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+                <span id="count-1" class="count-nbr">467</span>
+                <span class="count-text">Projects completed</span>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
+                <span id="count-2" class="count-nbr">2835</span>
+                <span class="count-text">Emails Send</span>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
+                <span id="count-3" class="count-nbr">46,930</span>
+                <span class="count-text">Pixels created</span>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="col-md-3 count-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+                <span id="count-4" class="count-nbr">102,890</span>
+                <span class="count-text">Happy clients</span>
+              </div>
+
+            </div><!-- / .row -->
+          </div><!-- / .container -->
+        </div><!-- / .number-counters -->
+
+
+
+        <!-- ========== Features - Centerd Image ========== -->
+
+        <section class="container section ft-x">
+          <div class="row">
+            
+            <header class="sec-heading">
+              <h2>Mobile Friendly</h2>
+              <span class="subheading">Created to work on all mobile devices</span>
+            </header>
+
+            <!-- Feature 1 -->
+            <div class="col-lg-4 wow fadeInLeft" data-wow-duration=".8s">
+              
+              <!-- white space -->
+              <div class="ws-m"></div>
+
+              <!-- Material right aligned - Item 1 -->
+              <div class="col-md-12 no-gap ws-s ft-item ft-material right-align">
+                <div class="ft-content">
+                  <h5>Easily Adjusti</h5>
+                  <p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius.</p>
+                </div>
+                <div class="ft-icon">
+                  <i class="fa fa-hand-peace-o"></i>
+                </div>
+              </div><!-- / .ft-item -->
+
+              <!-- Material right aligned - Item 2 -->
+              <div class="col-md-12 no-gap ws-s ft-item ft-material right-align">
+                <div class="ft-content">
+                  <h5>100% Responsive</h5>
+                  <p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius.</p>
+                </div>
+                <div class="ft-icon">
+                  <i class="fa fa-tv"></i>
+                </div>
+              </div><!-- / .ft-item -->
+
+            </div><!-- / .col-lg-4 -->      
+
+            <!-- Center Image -->
+            <div class="col-lg-4">
+              <img src="http://placehold.it/360x600" alt="iPad cover" class="img-responsive center-block wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+            </div>
+
+            <!-- Features Left -->
+            <div class="col-lg-4 wow fadeInRight"  data-wow-duration=".8s">
+              
+              <!-- white space -->
+              <div class="ws-m"></div>
+              
+              <!-- Item 3 -->
+              <div class="col-md-12 no-gap ws-s ft-item ft-material">
+                <i class="fa fa-cogs"></i>
+                <h5>Modular Design</h5>
+                <p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius, vero.</p>
+              </div><!-- / .ft-item -->
+
+              <!-- Item 4 -->
+              <div class="col-md-12 no-gap ws-s ft-item ft-material">
+                <i class="fa fa-star"></i>
+                <h5>Lots of features</h5>
+                <p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius, vero.</p>
+              </div><!-- / .ft-item -->
+
+            </div><!-- / .col-lg-4 -->
+
+          </div><!-- / .row -->
+        </section><!-- / .container -->
+
+
+
+        <!-- ========== Cricle Counters - Parallax ========== -->
+
+        <div id="skillsCircles" class="circles-counters">
+          <div class="container">
+            <div id="counters" class="row count-wrapper">
+              
+              <!-- Item 1 -->
+              <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
+                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-gear"></span></div>
+                <span class="circle-text">Web Development</span>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s">
+                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-display"></span></div>
+                <span class="circle-text">Web Design</span>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s">
+                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-photo"></span></div>
+                <span class="circle-text">Photography</span>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
+                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-star"></span></div>
+                <span class="circle-text">Marketing</span>
+              </div>
+
+            </div><!-- / .row -->
+          </div><!-- / .container -->
+        </div><!-- / .circles-counters -->
+
+        
+
+        <!-- ========== Portfolio ========== -->
+
+        <section class="container-fluid portfolio-layout portfolio-columns-fw">
+          <div class="row">
+            <header class="sec-heading">
+              <h2>Some of our project</h2>
+              <span class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing</span>
+            </header>
+          </div><!-- / .row -->
+          
+          <!-- Filters -->
+          <div class="row">
+            <ul id="pfolio-filters" class="portfolio-filters">
+              <li class="active"><a href="#" data-filter="*">All</a></li>
+              <li><a href="#" data-filter=".webdesing">Webdesign</a></li>
+              <li><a href="#" data-filter=".print">Print</a></li>
+              <li><a href="#" data-filter=".photo">Photography</a></li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <div id="pfolio">
+
+              <!-- Item 1 -->
+              <div class="col-md-4 portfolio-item print">
+                <div class="p-wrapper hover-default">
+                  <img src="http://placehold.it/990x650/aaa/ccc" alt="Project Example">
+                  <div class="p-hover">
+                    <div class="p-content">
+                      <h4>Project Name</h4>
+                      <h6 class="subheading">Sub heading for the project</h6>
+                    </div>
+                  </div>
+                  <a href="portfolio-single-1.html" class="open-btn"><i class="fa fa-expand"></i></a>
+                </div>
+              </div><!-- / .portfolio-item -->
+
+              <!-- Item 2 -->
+              <div class="col-md-4 portfolio-item webdesing photo">
+                <div class="p-wrapper hover-default">
+                  <img src="http://placehold.it/990x650" alt="Project Example">
+                  <div class="p-hover">
+                    <div class="p-content">
+                      <h4>Project Name</h4>
+                      <h6 class="subheading">Sub heading for the project</h6>
+                    </div>
+                  </div>
+                  <a href="portfolio-single-1.html" class="open-btn"><i class="fa fa-expand"></i></a>
+                </div>
+              </div><!-- / .portfolio-item -->
+
+              <!-- Item 3 -->
+              <div class="col-md-4 portfolio-item photo print">
+                <div class="p-wrapper hover-default">
+                  <img src="http://placehold.it/990x650/aaa/ccc" alt="Project Example">
+                  <div class="p-hover">
+                    <div class="p-content">
+                      <h4>Project Name</h4>
+                      <h6 class="subheading">Sub heading for the project</h6>
+                    </div>
+                  </div>
+                  <a href="portfolio-single-1.html" class="open-btn"><i class="fa fa-expand"></i></a>
+                </div>
+              </div><!-- / .portfolio-item -->
+
+              <!-- Item 4 -->
+              <div class="col-md-4 portfolio-item webdesing print">
+                <div class="p-wrapper hover-default">
+                  <img src="http://placehold.it/990x650" alt="Project Example">
+                  <div class="p-hover">
+                    <div class="p-content">
+                      <h4>Project Name</h4>
+                      <h6 class="subheading">Sub heading for the project</h6>
+                    </div>
+                  </div>
+                  <a href="portfolio-single-1.html" class="open-btn"><i class="fa fa-expand"></i></a>
+                </div>
+              </div><!-- / .portfolio-item -->
+
+              <!-- Item 5 -->
+              <div class="col-md-4 portfolio-item webdesing">
+                <div class="p-wrapper hover-default">
+                  <img src="http://placehold.it/990x650/aaa/ccc" alt="Project Example">
+                  <div class="p-hover">
+                    <div class="p-content">
+                      <h4>Project Name</h4>
+                      <h6 class="subheading">Sub heading for the project</h6>
+                    </div>
+                  </div>
+                  <a href="portfolio-single-1.html" class="open-btn"><i class="fa fa-expand"></i></a>
+                </div>
+              </div><!-- / .portfolio-item -->
+
+              <!-- Item 6 -->
+              <div class="col-md-4 portfolio-item photo print webdesing">
+                <div class="p-wrapper hover-default">
+                  <img src="http://placehold.it/990x650" alt="Project Example">
+                  <div class="p-hover">
+                    <div class="p-content">
+                      <h4>Project Name</h4>
+                      <h6 class="subheading">Sub heading for the project</h6>
+                    </div>
+                  </div>
+                  <a href="portfolio-single-1.html" class="open-btn"><i class="fa fa-expand"></i></a>
+                </div>
+              </div><!-- / .portfolio-item -->
+
+            </div><!-- / #pfolio -->
+          </div><!-- / .row -->
+        </section><!-- / .portfolio-columns-fw -->
+
+
+
+        <!-- ========== CTA - Contact Link ========== -->
+
+        <div class="cta-link cta-dark">
+          <div class="bg-overlay">
+            
+            <div class="cta-wrapper">
+              <h3 class="h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">See what we can do for you</h3>
+              <a href="#contact" class="btn btn-light btn-large wow fadeIn" data-wow-delay=".3s" data-wow-duration="1s">Get in touch</a>
+            </div>
+
+          </div>
+        </div><!-- / .dark-bg .cta-link -->
+
+
+
+        <!-- ========== Testimonials ========== -->
+
+        <div class="testimonials-parallax">
+          <div class="bg-overlay">
+            
+            <div class="t-wrapper t-slider">
+
+              <!-- Testimonial 1 -->
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                <span class="et-quote t-type"></span>
+                <footer>
+                  <cite>
+                    <h5 class="h-alt">Patrick Owens</h5>
+                    <h5>CEO - Company Name</h5>
+                  </cite>
+                </footer>
+              </blockquote>
+
+              <!-- Testimonial 2 -->
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                <span class="et-quote t-type"></span>
+                <footer>
+                  <cite>
+                    <h5 class="h-alt">Patrick Owens</h5>
+                    <h5>CEO - Company Name</h5>
+                  </cite>
+                </footer>
+              </blockquote>
+              
+              <!-- Testimonial 3 -->
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                <span class="et-quote t-type"></span>
+                <footer>
+                  <cite>
+                    <h5 class="h-alt">Patrick Owens</h5>
+                    <h5>CEO - Company Name</h5>
+                  </cite>
+                </footer>
+              </blockquote>
+
+            </div><!-- / .t-wrapper -->
+            
+            <!-- Client Slider -->
+            <ul class="t-clients clients-slider">
+              <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
+              <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
+              <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
+              <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
+              <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
+              <li><a href="#"><img src="assets/images/client-logo-placeholder.png" alt="Client"></a></li>
+            </ul><!-- / .t-clients -->
+
+          </div><!-- / .bg-overlay -->
+        </div><!-- / .testimonials-parallax -->
+
+
+
+        <!-- ========== Blog Preview - 3col ========== -->
+
+        <div class="gray-bg">
+          <section class="section container blog-columns blog-preview">
+            <div class="row">
+              
+              <header class="sec-heading">
+                <h2>Latest from our blog</h2>
+                <span class="subheading">Check out our blog to see what were up to</span>
+              </header>
+
+              
+              <!-- Blog Post 1 -->
+              <div class="col-lg-4 col-md-6 mb-sm-50">
+                <div class="blog-post wow fadeIn" data-wow-duration="2s">
+
+                  <!-- Image -->
+                  <a href="pages/blog/blog-post.html" class="post-img"><img src="http://placehold.it/990x715" alt="Blog Post 1"></a>
+
+                  <div class="bp-content">
+                    
+                    <!-- Meta data -->
+                    <div class="post-meta">
+                      <a href="#" class="post-date">
+                        <i class="fa fa-calendar-o"></i>
+                        <span>August 01.2015</span>
+                      </a>
+                      <a href="#" class="post-comments">
+                        <i class="fa fa-comments-o"></i>
+                        <span>12</span>
+                      </a>
+                    </div><!-- / .meta -->
+
+                    <!-- Post Title -->
+                    <a href="pages/blog/blog-post.html" class="post-title"><h4>Blog Post Title</h4></a>
+
+                    <!-- Blurb -->
+                    <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
+
+                    <!-- Link -->
+                    <a href="pages/blog/blog-post.html" class="btn btn-small">Read More</a>
+
+                  </div><!-- / .bp-content -->
+
+                </div><!-- / .blog-post -->
+              </div><!-- / .col-lg-4 -->
+
+
+              <!-- Blog Post 2 -->
+              <div class="col-lg-4 col-md-6 mb-sm-50">
+                <div class="blog-post wow fadeIn" data-wow-duration="2s" data-wow-delay=".3s">
+
+                  <!-- Image -->
+                  <a href="pages/blog/blog-post.html" class="post-img"><img src="http://placehold.it/990x715" alt="Blog Post 1"></a>
+
+                  <div class="bp-content">
+                    
+                    <!-- Meta data -->
+                    <div class="post-meta">
+                      <a href="#" class="post-date">
+                        <i class="fa fa-calendar-o"></i>
+                        <span>August 01.2015</span>
+                      </a>
+                      <a href="#" class="post-comments">
+                        <i class="fa fa-comments-o"></i>
+                        <span>12</span>
+                      </a>
+                    </div><!-- / .meta -->
+
+                    <!-- Post Title -->
+                    <a href="pages/blog/blog-post.html" class="post-title"><h4>Blog Post Title</h4></a>
+
+                    <!-- Blurb -->
+                    <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
+
+                    <!-- Link -->
+                    <a href="pages/blog/blog-post.html" class="btn btn-small">Read More</a>
+
+                  </div><!-- / .bp-content -->
+
+                </div><!-- / .blog-post -->
+              </div><!-- / .col-lg-4 -->
+
+              
+              <!-- Blog Post 3 -->
+              <div class="col-lg-4 col-md-6">
+                <div class="blog-post wow fadeIn" data-wow-duration="2s" data-wow-delay=".6s">
+
+                  <!-- Image -->
+                  <a href="pages/blog/blog-post.html" class="post-img"><img src="http://placehold.it/990x715" alt="Blog Post 1"></a>
+
+                  <div class="bp-content">
+                    
+                    <!-- Meta data -->
+                    <div class="post-meta">
+                      <a href="#" class="post-date">
+                        <i class="fa fa-calendar-o"></i>
+                        <span>August 01.2015</span>
+                      </a>
+                      <a href="#" class="post-comments">
+                        <i class="fa fa-comments-o"></i>
+                        <span>12</span>
+                      </a>
+                    </div><!-- / .meta -->
+
+                    <!-- Post Title -->
+                    <a href="pages/blog/blog-post.html" class="post-title"><h4>Blog Post Title</h4></a>
+
+                    <!-- Blurb -->
+                    <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
+
+                    <!-- Link -->
+                    <a href="pages/blog/blog-post.html" class="btn btn-small">Read More</a>
+
+                  </div><!-- / .bp-content -->
+
+                </div><!-- / .blog-post -->
+              </div><!-- / .col-lg-4 -->
+
+
+            </div><!-- / .row -->
+          </section><!-- / .container -->
+        </div><!-- / .gray-bg -->
+
+
+
+        <!-- ========== CTA - Newsletter Signup ========== -->
+
+        <div class="cta-newsletter cta-dark">
+          <div class="bg-overlay">
+            <div class="cta-wrapper">
+
+              <h3 class="cta-lead h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">Join our newsletter</h3>
+
+              <form class="mc-ajax mc-form subscribe-form" _lpchecked="1">
+
+                <!-- Email -->
+                <input type="email" name="EMAIL" placeholder="Your email address" id="mc-email" class="wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s" >
+                
+                <!-- Send Button -->
+                <input type="submit" name="subscribe" value="Join Us" class="btn btn-light btn-large wow fadeInUp mc-send-btn" data-wow-delay=".1s" data-wow-duration="1s">
+
+                <!-- Info (uncomment this for extra info) -->
+                <!-- <label for="mc-email" class="mc-info"></label> -->
+
+                <!-- Ajax message -->
+                <div class="subscribe-result"></div>
+                
+              </form>
+
+            </div><!-- / .cta-wrapper -->
+          </div><!-- / .bg-overlay -->
+        </div><!-- / .cta-newsletter -->
+
+
+
+        <!-- ========== Footer Contact ========== -->
+        
+        <footer class="footer-contact">
+          <div class="container-fluid">
+            <div class="row">
+
+              <!-- Map and address -->
+              <div class="col-lg-6 no-gap contact-info">
+
+                <!-- Show Info Button -->
+                <a href="#" class="show-info-link"><i class="fa fa-info"></i>Show info</a>
+
+                <div id="map-canvas" class="footer-map"></div>
+
+                <address class="contact-info-wrapper">
+                  <ul>
+                    <!-- Address -->
+                    <li class="contact-group">
+                      <span class="adr-heading">Address</span>
+                      <span class="adr-info">100 Street, Il, US</span>
+                    </li>
+                    <!-- Email -->
+                    <li class="contact-group">
+                      <span class="adr-heading">Email</span>
+                      <span class="adr-info">sayhello@email.com</span>
+                    </li>
+                  </ul>
+                  <ul>
+                    <!-- Phone -->
+                    <li class="contact-group">
+                      <span class="adr-heading">Phone</span>
+                      <span class="adr-info">+ 123 4567 890</span>
+                    </li>
+                    <!-- Mobile -->
+                    <li class="contact-group">
+                      <span class="adr-heading">Mobile</span>
+                      <span class="adr-info">+ 123 4567 890</span>
+                    </li>
+                  </ul>                  
+                  
+                  <a href="#" class="show-map"><span class="linea-basic-geolocalize-05"></span>show on map</a>
+                </address>
+
+              </div><!-- / .col-lg-6 -->
+
+
+              <!-- Contact Form -->
+              <div class="col-lg-6 no-gap section contact-form">
+                <header class="sec-heading">
+                  <h2>Contact</h2>
+                  <span class="subheading">Lorem ipsum dolor sit amet</span>
+                </header>
+
+                <form action="assets/contact-form/contact-form.php" method="POST" class="form-ajax wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+
+                  <!-- Name -->
+                  <div class="form-group">
+                    <input type="text" name="name" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your name">
+                    <label for="name-contact-1">Name</label>
+                    <span class="pull-right alert-error"></span>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="form-group">
+                    <input type="email" name="email" id="email-contact-1" class="form-control validate-locally" placeholder="Enter your email">
+                    <label for="email-contact-1">Email</label>
+                    <span class="pull-right alert-error"></span>
+                  </div>
+
+                  <!-- Message -->
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" id="message-contact-1" rows="5" placeholder="Your Message"></textarea>
+                    <label for="message-contact-1">Message</label>
+                  </div>
+                  <input type="submit" class="btn pull-right" value="Send Message">
+
+                  <!-- Ajax Message -->
+                  <div class="ajax-message col-md-12 no-gap"></div>
+
+                </form>
+              </div><!-- / .col-lg-6 -->
+
+            </div><!-- / .row -->
+          </div><!-- / .container-fluid -->
+
+
+          <!-- Social Links -->
+          <div class="dark-bg">
+            <div class="container footer-social-links">
+              <div class="row">
+                
+                <ul>
+                  <li><a href="#">facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Dribbble</a></li>
+                  <li><a href="#">Behance</a></li>
+                </ul>
+
+              </div>
+            </div><!-- / .container -->
+          </div><!-- / .dark-bg -->
+
+
+          <!-- Copyright -->
+          <div class="copyright">
+            <div class="container">
+              <div class="row">
+                
+                <div class="col-md-6">
+                  <small>&copy; 2015 Definity. Made by <a class="no-style-link" href="http://themeforest.net/user/octarinethemes" target="_blank">OctarineThemes</a></small>
+                </div>
+
+                <div class="col-md-6">
+                  <small><a href="#page-top" class="pull-right to-the-top">To the top<i class="fa fa-angle-up"></i></a></small>
+                </div>
+
+              </div><!-- / .row -->
+            </div><!-- / .container -->
+          </div><!-- / .copyright -->
+        </footer><!-- / .footer-contact -->
+
+
+
+        <!-- ========== Scripts ========== -->
+
+        <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+        <script src="assets/js/vendor/google-fonts.js"></script>
+        <script src="assets/js/vendor/jquery.easing.js"></script>
+        <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/vendor/bootstrap-hover-dropdown.min.js"></script>
+        <script src="assets/js/vendor/smoothscroll.js"></script>
+        <script src="assets/js/vendor/jquery.localScroll.min.js"></script>
+        <script src="assets/js/vendor/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/vendor/jquery.stellar.min.js"></script>
+        <script src="assets/js/vendor/jquery.parallax.js"></script>
+        <script src="assets/js/vendor/slick.min.js"></script>
+        <script src="assets/js/vendor/jquery.easypiechart.min.js"></script>
+        <script src="assets/js/vendor/countup.min.js"></script>
+        <script src="assets/js/vendor/isotope.min.js"></script>
+        <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/vendor/wow.min.js"></script>
+        <script src="assets/js/vendor/jquery.mb.YTPlayer.min.js"></script>
+        <script src="assets/js/vendor/jquery.ajaxchimp.js"></script>
+
+        <!-- Google Maps -->
+        <script src="assets/js/gmap.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOcd7o0W0r846FC_GoHSK56xeAvP8fV4s"></script>
+
+        <!-- Definity JS -->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
