@@ -2559,13 +2559,14 @@ fieldset[disabled] .form-control:hover {
 }
 
 .navbar .navbar-header {
-  width: 27%;
+  width: 30%;
   margin-top: 6px;
 }
 
 .navbar .navbar-header .navbar-brand {
-  padding: 15px 0;
-  margin-left: 0;
+  padding-top: 15px;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 .navbar .navbar-nav {
@@ -2579,7 +2580,7 @@ fieldset[disabled] .form-control:hover {
   letter-spacing: 2px;
   color: #999;
   -webkit-transition: color 0.5s;
-          transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .navbar .navbar-nav li a:focus {
